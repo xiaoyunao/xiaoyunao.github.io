@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-My name is Yun-Ao Xiao (肖云奥). I am a 3rd-year master's student in [WSGP](http://groups.bao.ac.cn/wsgp/) group, [NAOC](http://www.nao.cas.cn/). I'm working with Prof. Hu Zou on the stellar streams, dwarf galaxies and Milky Way dark matter halo.
+My name is Yun-Ao Xiao (肖云奥). I am a 3rd-year master's student in [WSGP](http://groups.bao.ac.cn/wsgp/) group, [NAOC](http://www.nao.cas.cn/). I'm working under the guidance of Prof. Hu Zou, focusing on stellar streams, dwarf galaxies, and the Milky Way dark matter halo.
 
 Skills in Programming, Observing, and Data Processing
 ------
-I am proficient in multiple programming languages, and I frequently use servers such as NERSC to handle large datasets and run complex analyses efficiently. My observational experience includes working with the 6090 Schmidt telescope, where I collected photometric data and gained extensive skills in data reduction and processing. My background in observational techniques and data handling has equipped me with the ability to manage and analyze large observational datasets for various research objectives.
+I am proficient in multiple programming languages, and I frequently use servers such as NERSC to handle large datasets and run complex analyses efficiently. My observational experience is extensive, having used multiple telescopes across China. I'm also contributing to the photometric pipeline development for Chinese Space Station Telescope (CSST), Mozi Wide-Field Survey Telescope(WFST), and the 60-90 Schmidt telescope. These experiences have equipped me with advanced skills in data reduction, processing, and pipeline design, enabling me to efficiently manage large photometric datasets and perform high-quality data analyses for various astronomical research needs.
 
 Involvement in the DESI Collaboration
 ------
