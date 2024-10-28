@@ -84,9 +84,9 @@ author:
   avatar           : "profile.png"
   bio              : "NAOC"
   location         : "Beijing, China"
-  employer         : "Hu Zou"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  employer         :
+  pubmed           :
+  googlescholar    :
   email            : "xiaoya@nao.cas.cn"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           :
   google_plus      :
   keybase          :
   instagram        :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : "@here_is_xiao"
   vine             :
   weibo            :
   xing             :
