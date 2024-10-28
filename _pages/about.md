@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Yun-Ao Xiao (肖云奥). I am a 3rd-year master's student in [WSGP](http://groups.bao.ac.cn/wsgp/) group, [NAOC](http://www.nao.cas.cn/). I'm working under the guidance of Prof. Hu Zou, focusing on stellar streams, dwarf galaxies, and the Milky Way dark matter halo.
+My name is Yun-Ao Xiao (肖云奥). I am a 3rd-year master's student in [WSGP](http://groups.bao.ac.cn/wsgp/) group, [NAOC](http://www.nao.cas.cn/). I'm working under the guidance of Prof. [Hu Zou](http://www.bao.ac.cn/nrc/zg/202208/t20220830_6506002.html), focusing on stellar streams, dwarf galaxies, and the Milky Way dark matter halo.
 
 Skills in Programming, Observing, and Data Processing
 ------
