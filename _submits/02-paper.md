@@ -2,7 +2,7 @@
 title: "Changing-look Active Galactic Nuclei from the Dark Energy Spectroscopic Instrument. II. Statistical Properties from the First Data Release"
 collection: submits
 permalink: https://arxiv.org/abs/2408.00402
-excerpt: "We present the identification of changing-look active galactic nuclei (CL-AGNs) from the Dark Energy Spectroscopic Instrument First Data Release and Sloan Digital Sky Survey Data Release 16 at z \\leq 0.9. To confirm the CL-AGNs, we utilize spectral flux calibration assessment via an [O\,{\sc iii}]-based calibration, pseudo-photometry examination, and visual inspection. This rigorous selection process allows us to compile a statistical catalog of 561 CL-AGNs, encompassing 527 Hβ, 149 Hα, and 129 Mg II CL behaviors.<br>
+excerpt: "We present the identification of changing-look active galactic nuclei (CL-AGNs) from the Dark Energy Spectroscopic Instrument First Data Release and Sloan Digital Sky Survey Data Release 16 at z \\leq 0.9. To confirm the CL-AGNs, we utilize spectral flux calibration assessment via an [O\\,{\\sc iii}]-based calibration, pseudo-photometry examination, and visual inspection. This rigorous selection process allows us to compile a statistical catalog of 561 CL-AGNs, encompassing 527 $\\text{H}\\beta$, 149 $\\text{H}\\alpha$, and 129 Mg II CL behaviors.<br>
 In this sample, we find:<br>
 1. A 283:278 ratio of turn-on to turn-off CL-AGNs.<br>
 2. The critical value for CL events is confirmed around Eddington ratio \\sim 0.01.<br>
