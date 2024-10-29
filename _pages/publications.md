@@ -9,6 +9,9 @@ author_profile: true
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %}
 
-{% for post in site.publications reversed %}
+{% include base_path %}
+
+{% assign combined_posts = site.publications | concat: site.submits %}
+{% for post in combined_posts reversed %}
   {% include archive-single.html %}
 {% endfor %}
