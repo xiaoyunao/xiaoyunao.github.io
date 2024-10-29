@@ -1,9 +1,10 @@
 ---
 title: "Frontier Symposium on Multi-Messenger and Multi-Wavelength Astronomy"
 collection: talks
-permalink: /talks/001-talk
+permalink: /talks/002-talk
 date: 2023-12-28
 ---
 
-Location: Kunming, Yunnan, China<br>
+Yunnan University, Kunming, Yunnan, China<br>
+ <br>
 <strong>Talk: A SDSS-DESI Proper Motion Catalog</strong>
