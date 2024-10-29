@@ -4,7 +4,7 @@ collection: submits
 permalink: https://arxiv.org/abs/2405.04016
 excerpt: 'In this study, we present the construction of a new proper motion catalog utilizing the photometric data from the Sloan Digital Sky Survey (SDSS) and Dark Energy Spectroscopic Instrument (DESI) imaging surveys, with a median time baseline of about 13 years.'
 date: 2024-05-07
-venue: 'Astronomical Journal, first author'
+venue: 'Astronomical Journal, **first author**'
 paperurl: 'https://arxiv.org/abs/2405.04016'
 ---
 
