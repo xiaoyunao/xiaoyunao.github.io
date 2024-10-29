@@ -5,4 +5,4 @@ permalink: /talks/003-workshop
 date: 2024-10-22
 ---
 
-Space Telescope Science Institute, Baltimore, Maryland, US<br>
+Space Telescope Science Institute, Baltimore, Maryland, USA<br>
