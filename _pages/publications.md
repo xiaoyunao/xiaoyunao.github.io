@@ -8,9 +8,9 @@ author_profile: true
 {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %}
-
+  
 {% if page.image %}
-  <img src="{{ page.image }}" alt="{{ page.title }} image">
+  <img src="{{ page.image | prepend: base_path}}" alt="{{ page.title }} image">
 {% endif %}
 
 {% include base_path %}
