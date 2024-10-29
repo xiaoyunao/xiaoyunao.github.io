@@ -229,7 +229,7 @@ defaults:
   # _publications
   - scope:
       path: ""
-      type: 
+      type: submits
     values:
       layout: single
       author_profile: true
