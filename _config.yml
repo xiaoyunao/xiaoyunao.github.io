@@ -188,7 +188,7 @@ collections:
     permalink: /:collection/:path/
   submits:
     output: true
-    permalink: /publications/:path/
+    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -229,7 +229,7 @@ defaults:
   # _publications
   - scope:
       path: ""
-      type: submits
+      type: publications
     values:
       layout: single
       author_profile: true
