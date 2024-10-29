@@ -1,7 +1,7 @@
 ---
 title: "Galaxy Evolution and Time-Domain Astronomy"
 collection: talks
-permalink: /talks/talk-001
+permalink: /talks/001-talk
 venue: "Anqing, Anhui, China"
 date: 2023-11-07
 location: "Anqing, Anhui, China"
