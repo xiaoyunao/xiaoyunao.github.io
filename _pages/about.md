@@ -12,7 +12,7 @@ My name is Yun-Ao Xiao (肖云奥), a 3rd-year master's student in [WSGP](http:/
 
 Skills in Programming, Observing, and Data Processing
 ------
-I am proficient in multiple programming languages, and I frequently use servers such as NERSC to handle large datasets and run complex analyses efficiently. My observational experience is extensive, having used multiple telescopes across China. I'm also contributing to the photometric pipeline development for Chinese Space Station Telescope (CSST), Multi-channel Photometric Survey Telescope (Mephisto), and the 60-90 Schmidt telescope. These experiences have equipped me with advanced skills in data reduction, processing, and pipeline design, enabling me to efficiently manage large photometric datasets and perform high-quality data analyses for various astronomical research needs.
+I am proficient in multiple programming languages, and I frequently use servers such as NERSC to handle large datasets and run complex analyses efficiently. My observational experience is extensive, having used multiple telescopes across China. I'm also contributing to the photometric pipeline development for Chinese Space Station Telescope ([CSST](http://groups.bao.ac.cn/csst/ktjj/)), Multi-channel Photometric Survey Telescope ([Mephisto](http://www.swifar.ynu.edu.cn/info/1015/1073.htm)), and the 60-90cm Schmidt telescope. These experiences have equipped me with advanced skills in data reduction, processing, and pipeline design, enabling me to efficiently manage large photometric datasets and perform high-quality data analyses for various astronomical research needs.
 
 Involvement in the DESI Collaboration
 ------
