@@ -1,5 +1,5 @@
 ---
-title: "Accurate Flux Calibration in the Era of Space Astronomy and AllSurveys Workshop"
+title: "Accurate Flux Calibration in the Era of Space Astronomy and All-Sky Surveys Workshop"
 collection: talks
 permalink: /talks/003-workshop
 date: 2024-10-22
