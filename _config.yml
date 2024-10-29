@@ -235,6 +235,15 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # _submits
+  - scope:
+      path: ""
+      type: submits
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _portfolio
   - scope:
       path: ""
