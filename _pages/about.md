@@ -10,9 +10,11 @@ redirect_from:
 
 My name is Yun-Ao Xiao (肖云奥), a 3rd-year master's student in [WSGP](http://groups.bao.ac.cn/wsgp/) group, [NAOC](http://www.nao.cas.cn/). I'm working under the guidance of Prof. [Hu Zou](http://www.bao.ac.cn/nrc/zg/202208/t20220830_6506002.html), focusing on stellar streams, dwarf galaxies, and the Milky Way dark matter halo.
 
-Research Background
+My Research
 ------
-My research journey began with undergraduate work in flux calibration, and I have since expanded my studies to explore proper motions and the dynamics of stellar streams. I am particularly focused on investigating Palomar 5, a unique globular cluster known for its extended tidal streams. This research combines observational data and computational methods to probe the structure and evolution of the Milky Way and its satellite systems.
+In the formation and evolution of galaxies, stellar halos are built through mergers with satellite galaxies. When dwarf galaxies undergo tidal stripping, their stars and globular clusters are stretched out to form tidal streams. Mergers with lower mass ratios may also produce or enhance the thick disk component of galaxies. Since the dynamical timescales required for the global equilibrium of the outer halo are quite long, stars, clusters, tidal streams, and satellite galaxies in the halo serve as excellent tracers for probing the mass distribution and dynamical properties of the dark matter halo.<br>
+Based on photometric data with a time baseline of 10–20 years from SDSS and DESI, we constructed a proper motion catalog covering 12,589 square degrees, containing over 100 million PSF sources, using a galaxy-based reference frame. More than 40% of the sources in this catalog are fainter than 21.5 mag (in the r-band). The systematic and random errors of proper motions, evaluated using 730,000 quasars, show that most sources have systematic errors under 0.5 mas/year, with precision reaching 3–6 mas/year. Utilizing this deeper proper motion catalog, we aim to systematically search for tidal streams and satellite galaxies in combination with DESI and other photometric and spectroscopic data, facilitating dynamical and chemical studies of the Milky Way halo and its substructures.<br>
+In addition to the substructures within the Milky Way halo, we are also interested in stellar streams and dwarf galaxies in nearby galaxies. Thanks to deeper photometric and spectroscopic surveys, we can resolve member stars within certain distant substructures and study them using similar methods as those applied to the Milky Way. For substructures where individual stars cannot be resolved, we are also trying to detect them using CNN and other techniques in processed images.
 
 Skills in Programming, Observing, and Data Processing
 ------
