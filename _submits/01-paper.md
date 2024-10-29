@@ -6,4 +6,5 @@ excerpt: 'In this study, we present the construction of a new proper motion cata
 date: 2024-05-07
 venue: 'Astronomical Journal, <strong>first author</strong>'
 paperurl: 'https://arxiv.org/abs/2405.04016'
+image: /images/proper_motion.png
 ---
