@@ -34,4 +34,4 @@ Working in the DESI Collaboration has provided me with valuable insights into th
 
 For more info
 ------
-My office is located in Room A449 at the National Astronomical Observatories, CAS. Feel free to visit if you would like to discuss any of these topics!
+My office is located at A449, NAOC. Feel free to visit if you would like to discuss any of these topics!
