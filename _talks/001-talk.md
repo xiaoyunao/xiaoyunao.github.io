@@ -6,4 +6,4 @@ date: 2023-11-07
 ---
 
 Location: Anqing, Anhui, China<br>
-<strong>Talk: A SDSS-DESI Proper Motion Catalog<\strong>
+<strong>Talk: A SDSS-DESI Proper Motion Catalog</strong>
