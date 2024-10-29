@@ -1,10 +1,9 @@
 ---
-title: "Galaxy Evolution and Time-Domain Astronomy"
+title: "Galaxy Evolution and Time-Domain Astronomy Conference"
 collection: talks
 permalink: /talks/001-talk
-venue: "Anqing, Anhui, China"
 date: 2023-11-07
-location: "Anqing, Anhui, China"
 ---
 
-This is a description of your talk, which is a markdown files that can be all markdown-ified like any other post. Yay markdown!
+Location: Anqing, Anhui, China
+<strong>Talk: A SDSS-DESI Proper Motion Catalog<\strong>
