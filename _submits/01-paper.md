@@ -7,5 +7,5 @@ date: 2024-05-07
 venue: 'Astronomical Journal, <strong>first author</strong>'
 paperurl: 'https://arxiv.org/abs/2405.04016'
 ---
-
+![Proper Motion Catalog Overview](/images/proper_motion.png)
 [Download paper here](https://arxiv.org/pdf/2405.04016)
