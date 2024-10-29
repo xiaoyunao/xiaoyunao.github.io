@@ -26,7 +26,7 @@ These experiences have equipped me with advanced skills in data reduction, proce
 
 Involvement in the DESI Collaboration
 ------
-I have participated in DESI observations, gaining hands-on experience with spectral data acquisition and processing. This has helped me develop expertise in spectral observation techniques and data analysis skills essential for large-scale astronomical surveys.
+I have participated in Dark Energy Spectroscopic Instrument ([DESI](https://www.desi.lbl.gov/)) observations, gaining hands-on experience with spectral data acquisition and processing. This has helped me develop expertise in spectral observation techniques and data analysis skills essential for large-scale astronomical surveys.
 
 I am actively involved in the DESI Milky Way Survey Working Group ([MWS](https://desi.lbl.gov/trac/wiki/MilkyWayWG)) and frequently participate in discussions, where I have gained substantial knowledge on the study of Milky Way stellar streams and learned how to use these streams as probes to investigate the structure and properties of the Milky Way's dark matter halo.
 
