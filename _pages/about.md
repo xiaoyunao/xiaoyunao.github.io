@@ -24,6 +24,8 @@ I'm proficient in multiple programming languages, and I frequently use servers s
 
 My observational experience is extensive, having used multiple telescopes across China and the 200-inch Hale Telescope ([P200](https://sites.astro.caltech.edu/palomar/about/telescopes/hale.html)), and also handled some data from the UArizona Bok 2.3-meter Telescope ([Bok](https://noirlab.edu/public/programs/kitt-peak-national-observatory/bok-telescope/)). I'm also contributing to the photometric pipeline development for Chinese Space Station Telescope ([CSST](http://groups.bao.ac.cn/csst/ktjj/)), Multi-channel Photometric Survey Telescope ([Mephisto](http://www.swifar.ynu.edu.cn/info/1015/1073.htm)), and the 60-90cm Schmidt telescope.
 
+In addition, during my undergraduate studies, I participated in the development and testing of the imaging detectors for the Cherenkov telescope of Large High Altitude Air Shower Observatory ([LHAASO](http://english.ihep.cas.cn/lhaaso/)), gained some experience in high-energy observations and cosmic-ray physics.
+
 These experiences have equipped me with advanced skills in data reduction, processing, and pipeline design, enabling me to efficiently manage large photometric datasets and perform high-quality data analyses for various astronomical research needs.
 
 Involvement in the DESI Collaboration
