@@ -1,0 +1,10 @@
+---
+title: "Star Proper Motions Based on Two-epoch Observations from the SDSS and DESI Imaging Surveys"
+collection: submits
+permalink: https://arxiv.org/abs/2405.04016
+excerpt: "In this study, we present the construction of a new proper motion catalog utilizing the photometric data from the Sloan Digital Sky Survey (SDSS) and Dark Energy Spectroscopic Instrument (DESI) imaging surveys, with a median time baseline of about 13 years. To mitigate systematic errors, the DESI galaxy positions are employed to establish a reference frame and to correct the position-, magnitude-, and color-dependent discrepancies between SDSS and DESI imaging datasets. Spanning 12,589 square degrees, the catalog encompasses about 206.6 million non-Gaia objects down to m_r ~ 23. Based on 734k quasars, the assessment of the global systematic errors in the DESI-SDSS proper motion catalog yields values of 0.14 mas yr^-1 for $\\mu\\alpha$ and 0.11 mas yr^-1 for $\\mu\\delta$. The catalog exhibits a precision surpassing 3.7 mas yr^-1, albeit varying with position, color, and magnitude. An additional evaluation employing approximately 5,300 distant star samples yields an overall precision of approximately 3.0 and 2.9 mas yr^-1 for $\\mu\\alpha$ and $\\mu\\delta$, respectively. Further comparisons with proper motions from SDSS Stripe 82 reveal a strong consistency between the two datasets. As a practical application, we utilize fainter non-Gaia objects in our catalog to update the proper motions of 17 star clusters. The resulting proper motions for these clusters exhibit excellent consistency with those derived from Gaia data. Our proper motion measurements, characterized by a deeper limiting magnitude, stand as a valuable complement to the Gaia dataset. The catalog is publicly available at [https://www.scidb.cn/s/YzaIv2](https://www.scidb.cn/s/YzaIv2)."
+date: 2024-05-07
+venue: 'Astronomical Journal, <strong>first author</strong>'
+paperurl: 'https://arxiv.org/abs/2405.04016'
+image: /images/proper_motion.png
+---
