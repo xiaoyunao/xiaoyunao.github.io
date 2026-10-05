@@ -2,28 +2,36 @@
 
 ## Objective
 
-Maintain `xiaoyunao/xiaoyunao.github.io` exclusively from `/Users/island/Desktop/personal_page`, as requested by the user.
+Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_page`. Current milestone: avatar, research description, and public bibliography refresh.
 
 ## Milestones
 
-- [x] Identify the existing GitHub homepage repository.
-- [x] Clone into the current project directory and verify remote tracking.
-- [x] Record the canonical workspace and project continuity instructions.
-- [ ] Receive the user's next request before modifying homepage content or configuration.
+- [x] Clone and establish the canonical workspace.
+- [x] Replace the avatar with the supplied illustration, preserving the full image.
+- [x] Rewrite My Research around streams/halo, astrometry, and asteroid survey methods.
+- [x] Verify and add all 10 journal articles in public ORCID, plus the Palomar 5 arXiv preprint.
+- [x] Support publication figures and expandable author lists.
+- [x] Build locally and check rendered pages and responsive layout.
+- [ ] Incorporate any further text/figure requests and any additional papers supplied by the user.
+- [ ] Push/publish when requested.
 
 ## Outstanding issues
 
-- No blockers for cloning or Git access.
-- Local Ruby/Jekyll dependencies and build behavior are not yet checked.
+- Palomar 5 remains a preprint in the checked public sources; a newer private status requires user input.
+- Public-record completeness is verified against ORCID and both arXiv name variants, not any private manuscript list.
+- Other template sections (including CV and blog/portfolio examples) still contain sample content; review before exposing new navigation items.
+- The preview uses the existing GitHub Pages dependency stack; optional Faraday/GitHub metadata warnings do not prevent building.
 
 ## Validation criteria
 
-- `origin` points to `https://github.com/xiaoyunao/xiaoyunao.github.io.git`.
-- `main` tracks `origin/main`; original website files match the cloned revision.
-- This setup only adds maintenance documentation, with no push or deployment.
+- Avatar loads without cropping; My Research includes asteroid observations and pipeline work.
+- Published and preprint records remain distinct, with verified authorship, unique IDs, and working generated detail pages.
+- Publication figures load and fit narrow screens; maintenance files are excluded from site output.
+- Jekyll build and git whitespace checks pass; website changes are saved in a local milestone commit.
 
 ## Next recommended steps
 
-1. Continue from this directory when the user specifies homepage changes.
-2. Recover Git state and read WORKLOG.md and PLAN.md before editing.
-3. Inspect relevant content and establish the smallest suitable preview/build validation for the requested changes.
+1. Review http://127.0.0.1:4000/ and /publications/ with the user.
+2. Incorporate additional papers or publication-status corrections if provided.
+3. Add selected science figures or new sections as requested; the template supports both.
+4. Before future changes, recover Git state and read WORKLOG.md and this plan.

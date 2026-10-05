@@ -10,10 +10,10 @@ locale                   : "en-US"
 title                    : "Yun-Ao Xiao"
 title_separator          : "-"
 name                     : &name "Yun-Ao Xiao"
-description              : &description "personal description"
+description              : &description "Yun-Ao Xiao — stellar streams, Galactic archaeology, astrometry, and asteroid surveys."
 url                      : https://xiaoyunao.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "xiaoyunao/xiaoyunao.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -82,7 +82,7 @@ analytics:
 # Site Author
 author:
   name             : "Yun-Ao Xiao"
-  avatar           : "profile1.png"
+  avatar           : "cartoon_selfie.png"
   bio              : "National Astronomical Observatories, Chinese Academy of Sciences (NAOC)<br>
                        <br>
                       A20, Datun Road, Chaoyang District, Beijing 100012, China<br>
@@ -128,6 +128,14 @@ include:
   - _pages
   - files
 exclude:
+  - AGENTS.md
+  - WORKLOG.md
+  - PLAN.md
+  - README.md
+  - CHANGELOG.md
+  - docs
+  - .local
+  - Gemfile.lock
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

@@ -1,0 +1,21 @@
+# Publication verification — 2026-10-04
+
+The public [ORCID works API](https://pub.orcid.org/v3.0/0009-0004-2243-8289/works) returned 10 distinct DOI-bearing journal articles. Searching arXiv for both `Xiao, Yun-Ao` and `Xiao, Yunao` returned 11 distinct papers, including one additional Palomar 5 preprint. All 10 ORCID DOI records are represented exactly once. Authorship was checked using arXiv author lists and publisher-supplied Crossref metadata, with English arXiv names retained for the CSST distortion paper.
+
+Journal titles, volumes and article/page numbers were verified from ORCID bibliographic identifiers, Crossref and/or publisher records. Article dates use journal issue dates for sorting; only years are displayed. arXiv comments can lag journal publication, so a verified journal record takes precedence. Palomar 5 has no confirmed journal record in the consulted sources and is explicitly shown as a preprint. No private manuscripts are included.
+
+| Paper | Status | Journal record | arXiv |
+| --- | --- | --- | --- |
+| Physical Properties of 6.7 Million Galaxies from the DESI Bright Galaxy Survey: Spectral Fitting and Systematic Tests with Mock Spectra | published | [The Astrophysical Journal Supplement Series, 286, 34](https://doi.org/10.3847/1538-4365/ae8e71) | [2607.19162](https://arxiv.org/abs/2607.19162) |
+| Environmental Imprints on the Assembly of the Cool Gas around Bright Cluster Galaxies | published | [The Astrophysical Journal Letters, 1005, L45](https://doi.org/10.3847/2041-8213/ae8012) | [2607.12361](https://arxiv.org/abs/2607.12361) |
+| Extremely Metal-Poor Galaxies in DESI DR1: Connections to Galaxies in the Early Universe | published | [The Astronomical Journal, 171, 351](https://doi.org/10.3847/1538-3881/ae63b5) | [2603.05934](https://arxiv.org/abs/2603.05934) |
+| A Robust Geometric Distortion Solution for the Main Survey Camera of CSST | published | [The Astronomical Journal, 171, 264](https://doi.org/10.3847/1538-3881/ae505f) | [2603.09193](https://arxiv.org/abs/2603.09193) |
+| Comparative analysis of missing data imputation methods for CSST survey: Impact on photometric redshift estimation performance | published | [Astronomy & Astrophysics, 709, A239](https://doi.org/10.1051/0004-6361/202659116) | [2605.13219](https://arxiv.org/abs/2605.13219) |
+| Galaxy clusters from the DESI Legacy Imaging Surveys -- III. Star-forming fraction of brightest cluster galaxies | published | [Monthly Notices of the Royal Astronomical Society, 544, 3350–3360](https://doi.org/10.1093/mnras/staf1885) | [2511.09858](https://arxiv.org/abs/2511.09858) |
+| Spectral Hardening Reveals Afterglow Emergence in Long-duration Fast X-Ray Transients: A Case Study of GRB 250404A/EP250404a | published | [The Astrophysical Journal Letters, 989, L39](https://doi.org/10.3847/2041-8213/adf552) | [2506.00435](https://arxiv.org/abs/2506.00435) |
+| Changing-look Active Galactic Nuclei from the Dark Energy Spectroscopic Instrument. II. Statistical Properties from the First Data Release | published | [The Astrophysical Journal Supplement Series, 278, 28](https://doi.org/10.3847/1538-4365/adc124) | [2408.00402](https://arxiv.org/abs/2408.00402) |
+| Characterizing the Palomar 5 Stream: HDBSCAN Analysis and Galactic Halo Constraints | preprint | No journal publication verified | [2504.09964](https://arxiv.org/abs/2504.09964) |
+| Star Proper Motions Based on Two-epoch Observations from the SDSS and DESI Imaging Surveys | published | [The Astronomical Journal, 169, 195](https://doi.org/10.3847/1538-3881/adb72c) | [2405.04016](https://arxiv.org/abs/2405.04016) |
+| CSST large scale structure analysis pipeline: III. Emission-line redshift measurement for slitless spectra | published | [Monthly Notices of the Royal Astronomical Society, 538, 395–407](https://doi.org/10.1093/mnras/staf304) | [2502.11536](https://arxiv.org/abs/2502.11536) |
+
+Sources for the research narrative: existing homepage, [published proper-motion paper](https://doi.org/10.3847/1538-3881/adb72c), [ASAS](https://github.com/xiaoyunao/ASAS), and [GOTTA known-asteroid workflow](https://github.com/xiaoyunao/gotta-asteroid-known). The provided avatar is copied without image transformation; the existing proper-motion figure is reused from this repository.

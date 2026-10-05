@@ -5,19 +5,26 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% include base_path %}
+{% assign published = site.publications | where: "status", "published" | sort: "date" | reverse %}
+{% assign first_author = published | where: "role", "first-author" %}
+{% assign coauthored = published | where: "role", "co-author" %}
+{% assign preprints = site.publications | where: "status", "preprint" | sort: "date" | reverse %}
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
-  
-{% if page.image %}
-  <img src="{{ page.image | prepend: base_path}}" alt="{{ page.title }} image">
-{% endif %}
+<p>{{ published.size }} journal articles, including {{ coauthored.size }} co-authored papers, and {{ preprints.size }} preprint. See also my <a href="https://orcid.org/0009-0004-2243-8289">ORCID record</a>.</p>
 
-{% include base_path %}
-
-{% assign combined_posts = site.publications | concat: site.submits %}
-{% for post in combined_posts reversed %}
-  {% include archive-single.html %}
+<h2>First-author publications</h2>
+{% for post in first_author %}
+  {% include publication-entry.html post=post %}
 {% endfor %}
+
+<h2>Co-authored publications</h2>
+{% for post in coauthored %}
+  {% include publication-entry.html post=post %}
+{% endfor %}
+
+{% if preprints.size > 0 %}
+<h2>Preprints</h2>
+{% for post in preprints %}
+  {% include publication-entry.html post=post %}
+{% endfor %}
+{% endif %}

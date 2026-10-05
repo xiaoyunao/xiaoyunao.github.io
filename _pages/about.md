@@ -8,15 +8,25 @@ redirect_from:
   - /about.html
 ---
 
-My name is Yun-Ao Xiao (肖云奥), a 1st-year PhD student in [WSGP](http://groups.bao.ac.cn/wsgp/) group, [NAOC](http://www.nao.cas.cn/). I'm working under the guidance of Prof. [Hu Zou](http://www.bao.ac.cn/nrc/zg/202208/t20220830_6506002.html), focusing on stellar streams, dwarf galaxies, and the Milky Way dark matter halo.
+My name is Yun-Ao Xiao (肖云奥), a PhD student in [WSGP](http://groups.bao.ac.cn/wsgp/) group, [NAOC](http://www.nao.cas.cn/). I'm working under the guidance of Prof. [Hu Zou](http://www.bao.ac.cn/nrc/zg/202208/t20220830_6506002.html), studying stellar streams, dwarf galaxies, and the Milky Way dark matter halo, alongside the development of asteroid survey and data-processing methods.
 
 My Research
 ------
-In the formation and evolution of galaxies, halos are built through mergers with satellite galaxies. When dwarf galaxies undergo tidal stripping, their stars and globular clusters are stretched out to form tidal streams. Mergers with lower mass ratios may also produce or enhance the thick disk component of galaxies. Since the dynamical timescales required for the global equilibrium of the outer halo are quite long, stars, clusters, tidal streams, and satellite galaxies in the halo serve as excellent tracers for probing the mass distribution and dynamical properties of the dark matter halo.<br>
- <br>
-Based on photometric data with a time baseline of 10–20 years from SDSS and DESI, we constructed a proper motion catalog covering 12,589 square degrees, containing over 100 million PSF sources, using a galaxy-based reference frame. More than 40% of the sources in this catalog are fainter than 21.5 mag (in the r-band). The systematic and random errors of proper motions, evaluated using 730,000 quasars, show that most sources have systematic errors under 0.5 mas/year, with precision reaching 3~6 mas/year. Utilizing this deeper proper motion catalog, we aim to systematically search for tidal streams and satellite galaxies in combination with DESI and other photometric and spectroscopic data, facilitating dynamical and chemical studies of the Milky Way halo and its substructures.<br>
- <br>
-In addition to the substructures within the Milky Way halo, we are also interested in stellar streams and dwarf galaxies in nearby galaxies. Thanks to deeper photometric and spectroscopic surveys, we can resolve member stars within certain distant substructures and study them using similar methods as those applied to the Milky Way. For substructures where individual stars cannot be resolved, we are also trying to detect them using CNN and other techniques in processed images.
+I use wide-field imaging, astrometry, and spectroscopy to study how galaxies assemble and how objects move across the sky. My work connects Galactic archaeology with the development of survey methods and data pipelines, from tracing faint stellar structures in the Milky Way to identifying and measuring asteroids in time-domain observations.
+
+### Stellar streams and the Galactic halo
+
+Stellar streams preserve the history of disrupted star clusters and dwarf galaxies, while their orbits trace the Milky Way's gravitational field. I combine deep imaging, Gaia astrometry, and DESI spectroscopy to identify stream members and study their spatial, kinematic, and chemical properties. A particular focus is **Palomar 5**, where I use clustering methods and dynamical models to investigate the stream and constrain the structure of the Galactic dark matter halo. I am also interested in dwarf galaxies and faint tidal substructures around nearby galaxies.
+
+### Deep proper motions and survey astrometry
+
+Measuring the motions of faint stars opens a window onto the distant Galactic halo. In my [SDSS–DESI proper-motion study](https://doi.org/10.3847/1538-3881/adb72c), I combined imaging observations separated by roughly 13 years, using galaxies to establish a stable reference frame. The resulting catalog extends proper-motion measurements to approximately *r* = 23 over 12,589 square degrees, complementing Gaia at faint magnitudes. I use these measurements together with photometric and spectroscopic information to explore halo substructures and improve the selection of distant stellar populations.
+
+### Asteroid surveys and time-domain pipelines
+
+I also develop methods for asteroid observations with wide-field surveys, including work on **SMT and GOTTA** data. My interests span adaptive survey scheduling, the association of detections with known asteroids using predicted positions, and the extraction and quality assessment of asteroid photometry. I am developing workflows for moving and trailed sources, with the aim of turning repeated survey images into reliable measurements for studies of small Solar System bodies. My [adaptive asteroid survey scheduler](https://github.com/xiaoyunao/ASAS) connects observing cadence and field selection with visibility constraints and survey coverage.
+
+Across these projects, I focus on careful calibration, reproducible analysis, and practical pipelines that connect large survey datasets to astrophysical questions. My collaborative work also includes CSST data-processing methods and DESI studies of galaxies and active galactic nuclei.
 
 Skills in Programming, Observing, and Data Processing
 ------

@@ -2,6 +2,21 @@
 
 ## 2026-10-04
 
+### Refresh avatar, research, and publications
+
+- Goal: replace avatar, rewrite My Research including asteroid work, complete public co-authored publications, and verify template extension/image support.
+- Changed: `_config.yml`, `_pages/about.md`, `_pages/publications.md`, new `_publications/*.md` and publication include/styles, `_layouts/single.html`, avatar/style, `.gitignore`, README and continuity docs. Migrated the three outdated `_submits` records into `_publications`.
+- Research: three themes—stellar streams/halo (Palomar 5), deep SDSS–DESI astrometry, and SMT/GOTTA asteroid scheduling/matching/photometry. Removed the stale “1st-year” qualifier. Used the existing public homepage, published proper-motion study, ASAS and GOTTA repository descriptions; no unpublished numerical results added.
+- Bibliography: public ORCID contains 10 journal papers (one first-author, nine co-authored); arXiv author-name variants recover those 10 and one additional first-author Palomar 5 preprint. Added DOI/arXiv links, full author lists, concise summaries, and explicit preprint status. See docs/PUBLICATION_SOURCES.md.
+- Avatar: exact byte copy of user-provided cartoon_selfie.PNG to images/cartoon_selfie.png; rounded-square CSS preserves the whole illustration. Publication figures now render; reused existing proper_motion.png.
+- Commands: git fetch/status/history; ORCID public API, arXiv API, Crossref/publisher lookup; Homebrew Ruby 3.3 install; BUNDLE_PATH=.local/bundle bundle install; bundle exec jekyll build; jekyll serve with development config; Python metadata/output checks; git diff --check.
+- Setup/debugging: Homebrew dependency install hit a bottle-metadata error; Ruby itself installed successfully and OpenSSL loaded. Initial build caught an undefined new Sass variable; replaced it with the template's existing text-color variable. Used arXiv English author names for CSST distortion paper because publisher metadata interleaves Chinese name components.
+- Validation: Jekyll production and development builds passed; all 10 ORCID DOIs match, 11 arXiv IDs are unique, authorship and generated detail pages verified. Avatar SHA-256 matches supplied original. Maintenance files absent from generated output. Browser verified loaded images, 11 entries, expandable authors, desktop avatar, and no horizontal overflow at 1440px or 390px on the publications page.
+- Remaining: user may supply additional non-public papers or updated Palomar 5 status. Existing unrelated template pages/placeholders remain for a later requested review. No push/deployment performed.
+- Next: review local homepage/publications preview and refine text or add user-selected scientific figures; publish only when requested.
+
+### Establish canonical workspace
+
 - Goal: locate the existing personal homepage and establish its canonical local workspace.
 - Found: `xiaoyunao/xiaoyunao.github.io`, an existing Jekyll/academicpages website.
 - Workspace: `/Users/island/Desktop/personal_page`; cloned directly into the previously empty directory.

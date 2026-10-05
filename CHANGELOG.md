@@ -1,3 +1,9 @@
+## 2026-10-04
+
+- Replace the profile photo with the supplied illustrated portrait.
+- Refresh research interests, including asteroid survey and processing work.
+- Expand the bibliography to 10 published articles and one preprint; add verified links, expandable authors, and publication figure support.
+
 ## [3.4.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.2)
 
 ### Enhancements

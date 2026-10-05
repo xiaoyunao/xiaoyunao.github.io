@@ -5,4 +5,5 @@
 - The user designated this directory as the only workspace for maintaining this homepage. Use this checkout for future edits, validation, commits, and updates; do not create another working copy unless the user explicitly changes this instruction.
 - Recover context from git history, `WORKLOG.md`, and `PLAN.md` before new work. Check and fetch the remote before editing, and only synchronize when safe.
 - Keep `WORKLOG.md` in reverse chronological order and update `PLAN.md` at meaningful milestones.
-- The initial request only authorizes finding and cloning the project and recording this workspace convention. Homepage modifications are deferred to the user's next request.
+- Current authorized work includes replacing the avatar, revising My Research (including asteroid work), and completing the publication list. Work locally; push/deployment has not yet been requested.
+- Verify publication authorship and status against ORCID, arXiv, and publisher records. Keep preprints separate from published papers, and do not expose unpublished project results without the user's instruction.

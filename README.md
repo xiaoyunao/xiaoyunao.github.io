@@ -1,3 +1,50 @@
+# Yun-Ao Xiao's academic homepage
+
+Source for https://xiaoyunao.github.io, built with Jekyll and the academicpages template.
+The canonical editing workspace is `/Users/island/Desktop/personal_page`.
+
+## Local preview
+
+This checkout was validated with Ruby 3.3 and the `github-pages` Gemfile dependencies.
+On this Mac, Ruby is installed at `/opt/homebrew/opt/ruby@3.3/bin`; gems are kept locally in `.local/bundle`.
+The generated `Gemfile.lock` is local and ignored, matching the repository's unpinned GitHub Pages dependency setup.
+
+```sh
+cd /Users/island/Desktop/personal_page
+export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"
+export BUNDLE_PATH=".local/bundle"
+bundle install
+bundle exec jekyll build
+bundle exec jekyll serve --config _config.yml,_config.dev.yml --host 127.0.0.1
+```
+
+Open http://127.0.0.1:4000. Restart the preview after changing `_config.yml`.
+On another machine, install a compatible Ruby and Bundler first and omit the Mac-specific PATH line.
+
+## Editing guide
+
+- `_pages/about.md`: biography and My Research (Markdown with optional HTML figures).
+- `_config.yml`: site identity, author profile, and avatar filename.
+- `_publications/*.md`: one paper per file, with verified authors, status, dates, journal information, and links.
+- `_pages/publications.md` and `_includes/publication-entry.html`: publication groups and list presentation.
+- `_data/navigation.yml`: visible menu entries. Additional template pages include CV, portfolio, and blog archives; review their placeholder content before adding menu links.
+- `images/`: avatar and research/publication illustrations.
+- `docs/PUBLICATION_SOURCES.md`: publication audit and source links.
+- `WORKLOG.md`, `PLAN.md`, and git history: project continuity.
+
+For a publication illustration, set `image`, `image_alt`, and `image_caption` in the paper's front matter; the list renders it automatically. Add a figure to the paper body if it should also appear on its detail page. Research text can embed a figure directly:
+
+```html
+<figure>
+  <img src="{{ '/images/proper_motion.png' | relative_url }}" alt="Description of the scientific figure" loading="lazy">
+  <figcaption>Caption and source.</figcaption>
+</figure>
+```
+
+Publication records use `status: published` or `status: preprint`, and `role: first-author` or `role: co-author`. Dates for journal articles follow issue dates for consistent sorting; the website displays years. New papers require authorship and status verification. Maintenance docs and local tooling are excluded from site output.
+
+## Original template documentation
+
 A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
 
 I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
