@@ -2,6 +2,17 @@
 
 ## 2026-10-05
 
+### Verify Search Console ownership and request homepage indexing
+
+- Verification tag commit `5a2369f` deployed successfully; exact tag confirmed in the live homepage head. Search Console reports **Ownership verified**, method HTML tag.
+- Created/verified URL-prefix property https://xiaoyunao.github.io/ in the user's signed-in Google account.
+- Submitted sitemap.xml. Submission accepted, but initial report says **Couldn't fetch / Sitemap could not be read**, with zero discovered pages. No detailed cause shown. Direct live HTTP/XML checks pass; Google live URL test is in progress.
+- Home URL Inspection confirms **URL is unknown to Google**, no previous crawl/referring sitemap. Request indexing succeeded: **Indexing requested**, added to a priority crawl queue. This is not yet confirmation of indexing or search ranking.
+- Online validation: descriptive title and description present; robots references the sitemap; 30 unique sitemap URLs; removed sample CV/blog URLs return 404. Local preview rebuilt with development URL and responds correctly when bypassing the environment proxy for localhost.
+- Follow-up diagnosis: Google's live URL test at Oct 5, 2026 09:26:43 reports **URL is available to Google**, **Crawl allowed: Yes**, **Page fetch: Successful**, **Indexing allowed: Yes** for sitemap.xml. No website-side fetch/robots defect identified.
+- Resubmitted the same sitemap once after the successful live test; submission accepted, but report still shows **Couldn't fetch**, type Unknown, zero discovered pages. Do not call this successfully processed. Underlying report cause is unconfirmed; Google documentation notes transient failures and automatic retry for several days.
+- Remaining: Google must process sitemap and homepage request; actual indexing is not yet confirmed. Recheck the sitemap report later and investigate further if the error persists. Keep verification token permanently; no paid domain/server or scheduled monitoring.
+
 ### Deploy SEO changes and add Google verification tag
 
 - SEO commit `c18d544` deployed successfully by GitHub Pages at 2026-10-05T12:22:08Z.

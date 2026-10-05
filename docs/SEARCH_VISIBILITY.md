@@ -12,7 +12,7 @@ Canonical site: https://xiaoyunao.github.io/ (GitHub Pages; no paid domain or se
 
 ## Account setup
 
-Status (2026-10-05): URL-prefix property added in the user's signed-in account; its HTML verification token is configured. Ownership verification and sitemap submission await deployment.
+Status (2026-10-05): ownership verified by HTML tag; token deployed in commit `5a2369f`. Homepage was unknown to Google; indexing request accepted into the priority crawl queue. Sitemap submitted and resubmitted once after a successful Google live URL test (Crawl allowed: Yes; Page fetch: Successful). The Sitemaps report still shows Couldn't fetch / zero discovered pages. Actual processing/indexing is not confirmed; recheck later. No site-side fetch defect was reproduced.
 
 1. Sign in at https://search.google.com/search-console/ using the user's own Google account.
 2. Add a **URL-prefix** property: `https://xiaoyunao.github.io/`.
@@ -39,4 +39,5 @@ Inspect the rendered homepage title, description, canonical URL, Person JSON-LD 
 - Ownership verification: https://support.google.com/webmasters/answer/9008080
 - Property types: https://support.google.com/webmasters/answer/34592
 - Search title guidance: https://developers.google.com/search/docs/appearance/title-link
+- Sitemap report and fetch troubleshooting: https://support.google.com/webmasters/answer/7451001
 - Indexing requests: https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl

@@ -24,14 +24,16 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 - [x] Validate production metadata, real content records, and removal of sample output.
 - [x] Deploy the search-visibility update (`c18d544`, verified GitHub Pages build).
 - [x] Obtain the user's Google Search Console HTML verification tag from the logged-in account.
-- [ ] Publish the verification tag and verify ownership.
-- [ ] Submit sitemap.xml and inspect/request homepage indexing in Search Console.
+- [x] Publish the verification tag and verify ownership (HTML tag).
+- [x] Submit sitemap.xml and inspect/request homepage indexing in Search Console.
+- [x] Diagnose and document the initial sitemap fetch failure: Google live fetch succeeds; report still shows failure after one resubmission.
+- [ ] Recheck sitemap processing and actual homepage indexing after Google processes the requests.
 
 ## Outstanding issues
 
 - Palomar 5 remains a preprint in the checked public sources; a newer private status requires user input.
 - Public-record completeness is verified against ORCID and both arXiv name variants, not any private manuscript list.
-- Google sign-in and token retrieval completed; verification and sitemap submission await token deployment.
+- Ownership verified and homepage indexing requested; actual indexing is not yet confirmed. Sitemap submission accepted, but report still shows Couldn't fetch / zero pages. Both direct checks and Google's live fetch succeed; cause remains unconfirmed and needs a later report check.
 - Unused template sections are now excluded from the public build, with sources retained. Replace sample content before enabling them.
 - The preview uses the existing GitHub Pages dependency stack; optional Faraday/GitHub metadata warnings do not prevent building.
 
@@ -44,6 +46,6 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 
 ## Next recommended steps
 
-1. Complete the verification-tag deployment.
-2. Add the Google verification token when supplied; deploy, verify ownership, submit sitemap.xml, and inspect homepage indexing. See docs/SEARCH_VISIBILITY.md.
+1. Recheck the Search Console sitemap report after processing; if failure persists, investigate the new error details.
+2. Check actual homepage indexing after the accepted request; do not repeatedly request indexing. See docs/SEARCH_VISIBILITY.md; no recurring monitoring has been scheduled.
 3. Continue content maintenance only from this checkout. No paid domain or server is planned.
