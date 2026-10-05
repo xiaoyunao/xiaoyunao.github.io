@@ -2,6 +2,17 @@
 
 ## 2026-10-05
 
+### Prepare search visibility and Search Console verification
+
+- Goal: improve Google discoverability using the existing free GitHub Pages address; user reports adding homepage links to ORCID and GitHub.
+- Findings: live homepage/robots/sitemap return 200 with no indexing block. Template computed a description but omitted the standard meta tag; sitemap exposed sample posts, a 2199 duplicate URL, and fictional CV. Empty course-image placeholder also generated an indexable page.
+- Files: `_config.yml`, `_includes/seo.html`, homepage and section metadata, utility pages/sitemap, README, docs/SEARCH_VISIBILITY.md, CHANGELOG.md, PLAN.md.
+- Changes: descriptive homepage title with xiaoyunao, research description, Person alternate names/profile links, sharing image, GitHub sidebar link. Excluded unused template sources without deleting them; disabled future posts; kept actual teaching/talk/publication/education content. Utility pages use noindex and are omitted from XML sitemap.
+- Commands: git status/branch/fetch/history; official Google verification/title documentation; Jekyll safe production build; Python rendered HTML/JSON-LD/XML assertions; git diff --check.
+- Validation: production build passed; actual records and metadata verified; sitemap URLs unique with no sample posts/CV/future dates. Initial assertion caught Markdown treating the title's vertical bar as a table; title now uses plain-text HTML escaping.
+- Search Console: opened the service in the in-app browser, which shows the signed-out landing page. Asked user for account-specific HTML verification tag. No verification token invented; property verification, sitemap submission and indexing request remain pending.
+- Next: publish the validated SEO changes; insert the user's verification tag when available, deploy it, then complete verification and submit sitemap.
+
 ### Publish education and research-profile update
 
 - Goal: push the user's approved second content iteration.

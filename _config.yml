@@ -17,7 +17,7 @@ repository               : "xiaoyunao/xiaoyunao.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 auto-regeneration        : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
@@ -51,6 +51,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
+# Paste only the content value from Search Console's HTML verification tag.
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
@@ -63,13 +64,16 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "cartoon_selfie.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Yun-Ao Xiao"
+  alternate_names        : ["肖云奥", "Yunao Xiao", "xiaoyunao"]
+  links:
+    - https://orcid.org/0009-0004-2243-8289
+    - https://github.com/xiaoyunao
 
 
 # Analytics
@@ -101,14 +105,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "xiaoyunao"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/0009-0004-2243-8289"
+  orcid            : "https://orcid.org/0009-0004-2243-8289"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -128,6 +132,30 @@ include:
   - _pages
   - files
 exclude:
+  # Keep unused template sources in Git, but do not publish their sample content.
+  - _posts/2012-08-14-blog-post-1.md
+  - _posts/2013-08-14-blog-post-2.md
+  - _posts/2014-08-14-blog-post-3.md
+  - _posts/2015-08-14-blog-post-4.md
+  - _posts/2199-01-01-future-post.md
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/cv.md
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/portfolio.html
+  - _pages/tag-archive.html
+  - _pages/talkmap.html
+  - _pages/terms.md
+  - _pages/year-archive.html
+  - talkmap
+  - talkmap.ipynb
+  - talkmap.py
+  - markdown_generator
+  - CONTRIBUTING.md
+  - files/2024course/image/1.md # Empty placeholder, not course material.
   - AGENTS.md
   - WORKLOG.md
   - PLAN.md

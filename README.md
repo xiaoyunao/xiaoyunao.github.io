@@ -27,7 +27,7 @@ On another machine, install a compatible Ruby and Bundler first and omit the Mac
 - `_config.yml`: site identity, author profile, and avatar filename.
 - `_publications/*.md`: one paper per file, with verified authors, status, dates, journal information, and links.
 - `_pages/publications.md` and `_includes/publication-entry.html`: publication groups and list presentation.
-- `_data/navigation.yml`: visible menu entries. Additional template pages include CV, portfolio, and blog archives; review their placeholder content before adding menu links.
+- `_data/navigation.yml`: visible menu entries. Unused template pages and sample posts are excluded from the published site in `_config.yml`; replace placeholders and remove the corresponding exclusion before enabling them.
 - `images/`: avatar and research/publication illustrations.
 - `docs/PUBLICATION_SOURCES.md`: publication audit and source links.
 - `WORKLOG.md`, `PLAN.md`, and git history: project continuity.
@@ -42,6 +42,12 @@ For a publication illustration, set `image`, `image_alt`, and `image_caption` in
 ```
 
 Publication records use `status: published` or `status: preprint`, and `role: first-author` or `role: co-author`. Dates for journal articles follow issue dates for consistent sorting; the website displays years. New papers require authorship and status verification. Maintenance docs and local tooling are excluded from site output.
+
+## Search visibility
+
+- The homepage uses `seo_title` for its browser/search title while keeping its visible heading. Page `description` or `excerpt` supplies the description tag; `_includes/seo.html` renders metadata and Person profile links.
+- `jekyll-sitemap` generates `/sitemap.xml` and `/robots.txt`. Only actual content should be published; template sources remain in Git and are explicitly excluded in `_config.yml`.
+- Google Search Console setup and indexing checks: [docs/SEARCH_VISIBILITY.md](docs/SEARCH_VISIBILITY.md).
 
 ## Original template documentation
 

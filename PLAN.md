@@ -2,7 +2,7 @@
 
 ## Objective
 
-Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_page`. Current milestone: education, programming/observing/AI skills, DESI-2/IBIS participation, and active-asteroid science.
+Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_page`. Current milestone: improve Google search visibility and connect Google Search Console using the existing free GitHub Pages address.
 
 ## Milestones
 
@@ -19,11 +19,19 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 - [ ] Incorporate any additional text, figures, or papers supplied by the user.
 - [x] Push the authorized refresh and verify GitHub Pages deployment (2026-10-05, content commit `232f451`).
 
+- [x] Add search descriptions, a descriptive homepage title, and linked Person identity metadata.
+- [x] Exclude template examples from publication and clean the sitemaps.
+- [x] Validate production metadata, real content records, and removal of sample output.
+- [ ] Deploy the search-visibility update.
+- [ ] Obtain the user's Google Search Console HTML verification tag; publish and verify ownership.
+- [ ] Submit sitemap.xml and inspect/request homepage indexing in Search Console.
+
 ## Outstanding issues
 
 - Palomar 5 remains a preprint in the checked public sources; a newer private status requires user input.
 - Public-record completeness is verified against ORCID and both arXiv name variants, not any private manuscript list.
-- Other template sections (including CV and blog/portfolio examples) still contain sample content; review before exposing new navigation items.
+- Search Console requires the user to log in and supply the account-specific HTML verification tag. The signed-out browser cannot finish account setup yet.
+- Unused template sections are now excluded from the public build, with sources retained. Replace sample content before enabling them.
 - The preview uses the existing GitHub Pages dependency stack; optional Faraday/GitHub metadata warnings do not prevent building.
 
 ## Validation criteria
@@ -35,7 +43,6 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 
 ## Next recommended steps
 
-1. Review the deployed homepage and Education at https://xiaoyunao.github.io/; the latest content iteration is online.
-2. Incorporate additional papers or publication-status corrections if provided.
-3. Add selected science figures or new sections as requested; the template supports both.
-4. Before future changes, recover Git state and read WORKLOG.md and this plan.
+1. Deploy the validated search metadata and sitemap cleanup.
+2. Add the Google verification token when supplied; deploy, verify ownership, submit sitemap.xml, and inspect homepage indexing. See docs/SEARCH_VISIBILITY.md.
+3. Continue content maintenance only from this checkout. No paid domain or server is planned.

@@ -1,7 +1,8 @@
 ---
 permalink: /
 title: "About me"
-excerpt: "About me"
+seo_title: "Yun-Ao Xiao (xiaoyunao) | Astronomy"
+excerpt: "Yun-Ao Xiao (肖云奥, xiaoyunao), astronomy PhD student at NAOC. Research on stellar streams, Galactic archaeology, astrometry, and active asteroids."
 author_profile: true
 redirect_from: 
   - /about/
