@@ -2,6 +2,15 @@
 
 ## 2026-10-05
 
+### Publish education and research-profile update
+
+- Goal: push the user's approved second content iteration.
+- Commands: git status/fetch/ahead-behind check; direct HTTPS git push; GitHub Pages builds API; live homepage and Education HTTP checks.
+- Result: content commit `374b8f7` pushed to main; GitHub Pages reports built with no error at 2026-10-05T03:26:09Z.
+- Validation: live homepage contains AI-assisted coding, DESI-2, active-asteroid monitoring, and Blanco; live Education contains September 2025 onward and the completed 2022–2025 master's dates. Branch synchronized after the content push.
+- Files changed afterward: WORKLOG.md and PLAN.md record the completed deployment; both are excluded from site output.
+- Remaining issues: none for this deployment. Next: continue refinements from this checkout when requested.
+
 ### Update education, skills, collaboration, and asteroid science
 
 - Goal: update PhD education, add Blanco observing plans and language/AI/agent experience, describe DESI-2/IBIS participation, and strengthen the asteroid science narrative.

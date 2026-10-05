@@ -15,7 +15,7 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 - [x] Update education dates and add the PhD entry from ORCID.
 - [x] Add explicit languages, AI/agent experience, upcoming Blanco observing, DESI-2/IBIS links, and active-asteroid science goals.
 - [x] Build and inspect the updated Education and homepage.
-- [ ] Publish this new iteration when requested.
+- [x] Publish the education/research-profile iteration and verify live content (2026-10-05, `374b8f7`).
 - [ ] Incorporate any additional text, figures, or papers supplied by the user.
 - [x] Push the authorized refresh and verify GitHub Pages deployment (2026-10-05, content commit `232f451`).
 
@@ -35,7 +35,7 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 
 ## Next recommended steps
 
-1. Review the latest local homepage and Education at http://127.0.0.1:4000/; this iteration has not yet been pushed.
+1. Review the deployed homepage and Education at https://xiaoyunao.github.io/; the latest content iteration is online.
 2. Incorporate additional papers or publication-status corrections if provided.
 3. Add selected science figures or new sections as requested; the template supports both.
 4. Before future changes, recover Git state and read WORKLOG.md and this plan.
