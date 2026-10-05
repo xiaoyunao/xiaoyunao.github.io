@@ -1,5 +1,17 @@
 # Work log
 
+## 2026-10-05
+
+### Publish homepage refresh
+
+- Goal: push the approved homepage refresh to GitHub and verify deployment.
+- Commands: git status/fetch/history; git push origin main; transport retries; final successful push with per-command `http.proxy=` and HTTP/1.1; GitHub Pages builds API; HTTP checks of live homepage and publications.
+- Result: `main` advanced from `d133858` to `232f451`, preserving both local commits. GitHub Pages reports this exact content commit as built, with no build error (2026-10-05T03:04:44Z).
+- Validation: live homepage includes cartoon_selfie.png and asteroid research; live publications page includes 10 journal articles, 9 co-authored papers, and arXiv:2607.19162. Local branch synchronized with origin after the content push.
+- Transport findings: proxy-routed Git upload repeatedly timed out; direct HTTPS succeeded. No permanent Git/network settings changed. Prepared API fallback performed only a read: it detected the already-updated branch and exited without mutation.
+- Files changed afterward: AGENTS.md, PLAN.md, WORKLOG.md record publishing authorization and verified deployment; these documents are excluded from website output.
+- Remaining issues: none for this deployment. Next: continue homepage refinements from this canonical checkout when requested.
+
 ## 2026-10-04
 
 ### Refresh avatar, research, and publications

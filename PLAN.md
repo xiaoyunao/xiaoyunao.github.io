@@ -13,7 +13,7 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 - [x] Support publication figures and expandable author lists.
 - [x] Build locally and check rendered pages and responsive layout.
 - [ ] Incorporate any further text/figure requests and any additional papers supplied by the user.
-- [ ] Push/publish when requested.
+- [x] Push the authorized refresh and verify GitHub Pages deployment (2026-10-05, content commit `232f451`).
 
 ## Outstanding issues
 
@@ -31,7 +31,7 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 
 ## Next recommended steps
 
-1. Review http://127.0.0.1:4000/ and /publications/ with the user.
+1. Review https://xiaoyunao.github.io/ and /publications/ with the user.
 2. Incorporate additional papers or publication-status corrections if provided.
 3. Add selected science figures or new sections as requested; the template supports both.
 4. Before future changes, recover Git state and read WORKLOG.md and this plan.
