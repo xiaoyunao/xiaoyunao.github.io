@@ -1,7 +1,6 @@
 ## 2026-10-05
 
-- Explain publication-name variants and the GitHub username visibly in the homepage introduction.
-- Add user-confirmed Instagram and TikTok links to the sidebar and Person identity metadata.
+- Revert the new visible name-variant paragraph and Instagram/TikTok links/metadata after the user clarified that social-account discoverability should be addressed separately from the homepage.
 
 - Improve search titles/descriptions and Person identity links; add the profile illustration to sharing metadata.
 - Exclude unused template examples and an empty placeholder from publication; clean the readable and XML sitemaps.

@@ -2,7 +2,7 @@
 
 ## Objective
 
-Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_page`. Current milestone: connect the public name variants and confirmed social profiles while explaining Google indexing and search metadata.
+Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_page`. Current milestone: restore the homepage after scope clarification, then explain Google discoverability for the social accounts themselves. Do not add Instagram/TikTok or extra name-variant prose to the homepage.
 
 ## Milestones
 
@@ -29,9 +29,10 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 - [x] Diagnose and document the initial sitemap fetch failure: Google live fetch succeeds; report still shows failure after one resubmission.
 - [ ] Recheck sitemap processing and actual homepage indexing after Google processes the requests.
 
-- [x] Confirm structured name variants and add a visible explanation of Yunao Xiao / xiaoyunao on the homepage.
-- [x] User confirmed Instagram @xiaoyunao; added visible link and sameAs.
-- [x] User supplied TikTok @yunaoxiao1007; public page verified and added visible link/sameAs.
+- [x] Confirm Instagram @xiaoyunao and TikTok @yunaoxiao1007 ownership/URLs.
+- [x] Remove the unrequested visible name paragraph and Instagram/TikTok additions from homepage source.
+- [ ] Verify corrective deployment online.
+- [ ] Explain social-profile indexing separately; do not add social accounts to the homepage.
 
 ## Outstanding issues
 
