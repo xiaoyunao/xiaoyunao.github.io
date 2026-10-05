@@ -22,15 +22,16 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 - [x] Add search descriptions, a descriptive homepage title, and linked Person identity metadata.
 - [x] Exclude template examples from publication and clean the sitemaps.
 - [x] Validate production metadata, real content records, and removal of sample output.
-- [ ] Deploy the search-visibility update.
-- [ ] Obtain the user's Google Search Console HTML verification tag; publish and verify ownership.
+- [x] Deploy the search-visibility update (`c18d544`, verified GitHub Pages build).
+- [x] Obtain the user's Google Search Console HTML verification tag from the logged-in account.
+- [ ] Publish the verification tag and verify ownership.
 - [ ] Submit sitemap.xml and inspect/request homepage indexing in Search Console.
 
 ## Outstanding issues
 
 - Palomar 5 remains a preprint in the checked public sources; a newer private status requires user input.
 - Public-record completeness is verified against ORCID and both arXiv name variants, not any private manuscript list.
-- Search Console requires the user to log in and supply the account-specific HTML verification tag. The signed-out browser cannot finish account setup yet.
+- Google sign-in and token retrieval completed; verification and sitemap submission await token deployment.
 - Unused template sections are now excluded from the public build, with sources retained. Replace sample content before enabling them.
 - The preview uses the existing GitHub Pages dependency stack; optional Faraday/GitHub metadata warnings do not prevent building.
 
@@ -43,6 +44,6 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 
 ## Next recommended steps
 
-1. Deploy the validated search metadata and sitemap cleanup.
+1. Complete the verification-tag deployment.
 2. Add the Google verification token when supplied; deploy, verify ownership, submit sitemap.xml, and inspect homepage indexing. See docs/SEARCH_VISIBILITY.md.
 3. Continue content maintenance only from this checkout. No paid domain or server is planned.

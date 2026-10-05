@@ -2,6 +2,14 @@
 
 ## 2026-10-05
 
+### Deploy SEO changes and add Google verification tag
+
+- SEO commit `c18d544` deployed successfully by GitHub Pages at 2026-10-05T12:22:08Z.
+- User completed Google sign-in while work continued. Created the URL-prefix property for https://xiaoyunao.github.io/ and read its account-specific HTML tag directly from the verification dialog.
+- Changed `_config.yml` to publish the supplied verification content value; verification/submission remain pending until this deployment is online.
+- Validation: production-safe Jekyll build and rendered verification-tag assertion; development preview rebuilt and served successfully via direct localhost connection (the environment HTTP proxy returns 502 for localhost).
+- Next: verify ownership in Search Console, submit sitemap.xml, and inspect/request homepage indexing.
+
 ### Prepare search visibility and Search Console verification
 
 - Goal: improve Google discoverability using the existing free GitHub Pages address; user reports adding homepage links to ORCID and GitHub.
