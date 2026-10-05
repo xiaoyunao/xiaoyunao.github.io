@@ -11,6 +11,8 @@ redirect_from:
 
 My name is Yun-Ao Xiao (肖云奥), a PhD student in [WSGP](http://groups.bao.ac.cn/wsgp/) group, [NAOC](http://www.nao.cas.cn/). I'm working under the guidance of Prof. [Hu Zou](http://www.bao.ac.cn/nrc/zg/202208/t20220830_6506002.html), studying stellar streams, dwarf galaxies, and the Milky Way dark matter halo, alongside the development of asteroid survey and data-processing methods.
 
+I also publish as **Yunao Xiao** and use **xiaoyunao** on [GitHub](https://github.com/xiaoyunao). My [ORCID record](https://orcid.org/0009-0004-2243-8289) connects my publications under these name variants.
+
 My Research
 ------
 I use wide-field imaging, astrometry, and spectroscopy to study how galaxies assemble and how objects move across the sky. My work connects Galactic archaeology with the development of survey methods and data pipelines, from tracing faint stellar structures in the Milky Way to identifying and measuring asteroids in time-domain observations.

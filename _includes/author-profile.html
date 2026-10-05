@@ -58,6 +58,9 @@
       {% if author.instagram %}
         <li><a href="https://instagram.com/{{ author.instagram }}"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
       {% endif %}
+      {% if author.tiktok %}
+        <li><a href="https://www.tiktok.com/@{{ author.tiktok }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> TikTok</a></li>
+      {% endif %}
       {% if author.tumblr %}
         <li><a href="https://{{ author.tumblr }}.tumblr.com"><i class="fab fa-fw fa-tumblr-square" aria-hidden="true"></i> Tumblr</a></li>
       {% endif %}

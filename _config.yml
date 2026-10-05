@@ -70,10 +70,12 @@ og_image                 : "cartoon_selfie.png"
 social:
   type                   : Person
   name                   : "Yun-Ao Xiao"
-  alternate_names        : ["肖云奥", "Yunao Xiao", "xiaoyunao"]
+  alternate_names        : ["肖云奥", "Yunao Xiao", "xiaoyunao", "yunaoxiao1007"]
   links:
     - https://orcid.org/0009-0004-2243-8289
     - https://github.com/xiaoyunao
+    - https://www.instagram.com/xiaoyunao/
+    - https://www.tiktok.com/@yunaoxiao1007
 
 
 # Analytics
@@ -108,7 +110,8 @@ author:
   github           : "xiaoyunao"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "xiaoyunao"
+  tiktok           : "yunaoxiao1007"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :

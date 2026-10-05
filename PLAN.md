@@ -2,7 +2,7 @@
 
 ## Objective
 
-Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_page`. Current milestone: improve Google search visibility and connect Google Search Console using the existing free GitHub Pages address.
+Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_page`. Current milestone: connect the public name variants and confirmed social profiles while explaining Google indexing and search metadata.
 
 ## Milestones
 
@@ -28,6 +28,10 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 - [x] Submit sitemap.xml and inspect/request homepage indexing in Search Console.
 - [x] Diagnose and document the initial sitemap fetch failure: Google live fetch succeeds; report still shows failure after one resubmission.
 - [ ] Recheck sitemap processing and actual homepage indexing after Google processes the requests.
+
+- [x] Confirm structured name variants and add a visible explanation of Yunao Xiao / xiaoyunao on the homepage.
+- [x] User confirmed Instagram @xiaoyunao; added visible link and sameAs.
+- [x] User supplied TikTok @yunaoxiao1007; public page verified and added visible link/sameAs.
 
 ## Outstanding issues
 

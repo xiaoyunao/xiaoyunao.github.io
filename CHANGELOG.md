@@ -1,5 +1,8 @@
 ## 2026-10-05
 
+- Explain publication-name variants and the GitHub username visibly in the homepage introduction.
+- Add user-confirmed Instagram and TikTok links to the sidebar and Person identity metadata.
+
 - Improve search titles/descriptions and Person identity links; add the profile illustration to sharing metadata.
 - Exclude unused template examples and an empty placeholder from publication; clean the readable and XML sitemaps.
 - Document Google Search Console verification and indexing setup.

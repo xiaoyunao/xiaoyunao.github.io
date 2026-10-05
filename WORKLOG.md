@@ -2,6 +2,18 @@
 
 ## 2026-10-05
 
+### Connect visible name variants and identify social-profile candidates
+
+- Goal: connect Yun-Ao Xiao, Yunao Xiao, and xiaoyunao to the homepage and explain metadata/Search Console versus visible page content.
+- Finding: Person metadata already uses Yun-Ao Xiao with alternateName values Yunao Xiao, xiaoyunao and 肖云奥, plus confirmed ORCID/GitHub sameAs URLs. No extra lowercase duplicates are needed.
+- Changed: `_pages/about.md` adds a natural visible sentence about publication names, GitHub username, and ORCID. Search title/description/verification stay intact.
+- Account lookup: user requested searching @xiaoyunao and confirming before adding. Public Instagram https://www.instagram.com/xiaoyunao/ exists, displayed name Yunao Xiao, bio To see the world; ownership confirmation requested. TikTok https://www.tiktok.com/@xiaoyunao displays Couldn't find this account; do not add an unverified link. Other same-name search results do not establish ownership.
+- Commands: git status/branch/fetch/history; official Google/Schema.org reference reads; web search and public browser profile lookup; Jekyll safe production build; HTML/JSON-LD assertions; git diff --check.
+- Validation: visible name variants and existing identity metadata/verification tag render correctly. Search Console inspection page still shows the accepted indexing request, not completed indexing; no repeat request submitted.
+- User confirmed Instagram ownership and supplied corrected TikTok handle @yunaoxiao1007. Public TikTok page opens and shows handle yunaoxiao1007 / display name vvxiao. Added both URLs to Person sameAs; added TikTok handle as an alternate name and both accounts to the profile sidebar (`_config.yml`, `_includes/author-profile.html`). No external account bio/settings changed.
+- Validation after profile additions: production build passed; visible Instagram/TikTok links match confirmed profiles, Person JSON-LD lists all four confirmed URLs and requested name variants, old incorrect TikTok candidate absent, title/description/Google verification preserved.
+- Remaining: no account-identification blocker. Next: publish and check live name/profile changes; indexing timing remains controlled by Google.
+
 ### Verify Search Console ownership and request homepage indexing
 
 - Verification tag commit `5a2369f` deployed successfully; exact tag confirmed in the live homepage head. Search Console reports **Ownership verified**, method HTML tag.
