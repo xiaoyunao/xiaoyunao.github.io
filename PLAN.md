@@ -31,7 +31,7 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 
 - [x] Confirm Instagram @xiaoyunao and TikTok @yunaoxiao1007 ownership/URLs.
 - [x] Remove the unrequested visible name paragraph and Instagram/TikTok additions from homepage source.
-- [ ] Verify corrective deployment online.
+- [x] Verify corrective deployment online (`d186a8a`); homepage restored.
 - [ ] Explain social-profile indexing separately; do not add social accounts to the homepage.
 
 ## Outstanding issues

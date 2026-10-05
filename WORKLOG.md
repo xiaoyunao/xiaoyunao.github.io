@@ -8,7 +8,8 @@
 - Restored `_config.yml`, `_includes/author-profile.html`, and `_pages/about.md` exactly to their pre-addition state in `844a719`: removed the new visible name-variant paragraph, Instagram/TikTok sidebar entries, new social sameAs URLs, and TikTok alternate name. Earlier approved search metadata, ORCID/GitHub links and Google verification remain intact.
 - Prior commit `d458f1d` had already deployed; this corrective commit must also be pushed and its live deployment verified. No external Instagram/TikTok settings or bios were changed.
 - Commands: git status/log/diff; targeted restore from verified prior commit; Jekyll safe build and rendered-output assertions; git diff --check.
-- Next: verify the rollback online, then explain how platform-owned social profiles become searchable. Do not add these social accounts to the homepage.
+- Result: corrective commit `d186a8a` deployed successfully. Direct live HTTP check confirms the new paragraph and all Instagram/TikTok references are absent, and the Google verification tag remains. Refreshed local browser preview also shows the restored homepage.
+- Next: discuss social-profile discoverability separately; do not add these accounts to the homepage or change external profile/privacy settings without agreed scope.
 
 ### Connect visible name variants and identify social-profile candidates
 
