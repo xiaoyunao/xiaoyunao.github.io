@@ -2,7 +2,7 @@
 
 ## Objective
 
-Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_page`. Current milestone: avatar, research description, and public bibliography refresh.
+Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_page`. Current milestone: education, programming/observing/AI skills, DESI-2/IBIS participation, and active-asteroid science.
 
 ## Milestones
 
@@ -12,7 +12,11 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 - [x] Verify and add all 10 journal articles in public ORCID, plus the Palomar 5 arXiv preprint.
 - [x] Support publication figures and expandable author lists.
 - [x] Build locally and check rendered pages and responsive layout.
-- [ ] Incorporate any further text/figure requests and any additional papers supplied by the user.
+- [x] Update education dates and add the PhD entry from ORCID.
+- [x] Add explicit languages, AI/agent experience, upcoming Blanco observing, DESI-2/IBIS links, and active-asteroid science goals.
+- [x] Build and inspect the updated Education and homepage.
+- [ ] Publish this new iteration when requested.
+- [ ] Incorporate any additional text, figures, or papers supplied by the user.
 - [x] Push the authorized refresh and verify GitHub Pages deployment (2026-10-05, content commit `232f451`).
 
 ## Outstanding issues
@@ -31,7 +35,7 @@ Maintain the personal homepage exclusively from `/Users/island/Desktop/personal_
 
 ## Next recommended steps
 
-1. Review https://xiaoyunao.github.io/ and /publications/ with the user.
+1. Review the latest local homepage and Education at http://127.0.0.1:4000/; this iteration has not yet been pushed.
 2. Incorporate additional papers or publication-status corrections if provided.
 3. Add selected science figures or new sections as requested; the template supports both.
 4. Before future changes, recover Git state and read WORKLOG.md and this plan.

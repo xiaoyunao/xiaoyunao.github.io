@@ -2,6 +2,18 @@
 
 ## 2026-10-05
 
+### Update education, skills, collaboration, and asteroid science
+
+- Goal: update PhD education, add Blanco observing plans and language/AI/agent experience, describe DESI-2/IBIS participation, and strengthen the asteroid science narrative.
+- Files changed: `_education/01.md`, `_education/02.md`, new `_education/03.md`, `_pages/education.md`, `_pages/about.md`, CHANGELOG.md, PLAN.md, and source notes in docs/PROFILE_SOURCES.md.
+- Education: public ORCID confirms B.S. 2018-09 to 2022-07, M.S. 2022-09 to 2025-07, Ph.D. starting 2025-09 with no end date. Retained UCAS naming from the existing site and explicitly added NAOC as research institution. Preserved undergraduate minor, advisor, and thesis information.
+- Content: named Python, Java, HTML and LaTeX; added AI-assisted coding/agent workflows; Blanco visit remains upcoming. DESI-2 and IBIS participation follows the user's statement, with primary-source links. Added active-asteroid monitoring goals, photometric/morphological diagnostics, mass-loss mechanisms, and volatile/physical-evolution motivation without claiming discoveries.
+- Rendering fix: the generic archive include used empty title links and excerpt-only education content; education now renders complete records with working detail links and explicit descending start-year order. Removed malformed unclosed strong tags from original entries.
+- Commands: git status/branch/fetch/history; ORCID educations API; primary-source web lookup; Jekyll safe build with development config; Python assertions on rendered text, education chronology and links; git diff --check; browser inspection of Education and homepage.
+- Validation: build passed; requested terms and DESI-2/IBIS URLs render; all three education dates and ordering match ORCID; education detail links are non-empty; visual inspection passed.
+- Remaining: no implementation blockers. This iteration is local and not yet pushed; earlier deployment remains online.
+- Next: review current local preview and publish this iteration when requested.
+
 ### Publish homepage refresh
 
 - Goal: push the approved homepage refresh to GitHub and verify deployment.

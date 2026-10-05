@@ -1,3 +1,10 @@
+## 2026-10-05
+
+- Update education from ORCID and add the PhD entry starting September 2025.
+- Expand skills with named languages, AI/agent workflows, and upcoming Blanco observations.
+- Add DESI-2/IBIS participation and links; strengthen the active-asteroid science description.
+- Fix education ordering, detail links, and full-content display.
+
 ## 2026-10-04
 
 - Replace the profile photo with the supplied illustrated portrait.
