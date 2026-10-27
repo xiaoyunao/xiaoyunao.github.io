@@ -1,0 +1,133 @@
+/* Research homepage: a single visual system for all four content sections. */
+.home-page { background: #fafafc; }
+.stream-hero {
+  position: relative;
+  height: calc(100svh - 69px);
+  min-height: 680px;
+  max-height: 1100px;
+  overflow: hidden;
+  background: #080d18 url('../../images/stream-poster.jpg') center / cover no-repeat;
+  color: #edf1f8;
+}
+#stream-canvas { display: block; width: 100%; height: 100%; touch-action: pan-y; }
+.hero-profile {
+  position: absolute; top: 44px; left: 0; right: 0;
+  display: flex; align-items: center; gap: 22px;
+  pointer-events: none;
+}
+.profile-avatar { width: 78px; height: 78px; flex: 0 0 78px; border-radius: 12px; object-fit: contain; }
+.hero-profile h1 { font-size: 42px; letter-spacing: -.035em; margin: 0 0 10px; line-height: 1.05; font-weight: 500; }
+.hero-profile p { font-size: 14px; line-height: 1.65; color: #b5bfce; margin: 0; }
+.stream-caption {
+  position: absolute; bottom: 55px; left: 0; right: 0;
+  display: flex; justify-content: space-between; align-items: end; gap: 40px;
+  pointer-events: none;
+}
+.stream-caption p { font-size: 13px; color: #acb7c7; margin: 0; line-height: 1.6; }
+.stream-caption .stream-caption-title { font-size: 17px; color: #f3f5f9; margin-bottom: 6px; letter-spacing: -.01em; }
+.stream-load-status { font-size: 12px; color: #acb7c7; }
+.stream-controls { pointer-events: auto; width: 350px; padding: 14px 18px; background: rgba(8,13,24,.8); border: 1px solid #2a3447; border-radius: 12px; }
+.stream-controls[hidden] { display: none; }
+.playback-row { display: flex; align-items: center; gap: 6px; justify-content: space-between; }
+.playback-row button { border: 0; background: none; color: #dce5f3; cursor: pointer; font-size: 12px; padding: 4px 7px; min-height: 36px; }
+.playback-row button:hover { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
+.playback-row output { color: #b4c1d4; font-size: 12px; min-width: 57px; text-align: right; font-variant-numeric: tabular-nums; }
+.timeline-label { display: block; font-size: 10px; color: #929fb3; margin: 6px 0 3px; }
+#stream-timeline { width: 100%; display: block; accent-color: #a8bfdc; cursor: pointer; min-height: 22px; }
+.stream-method { position: absolute; bottom: 14px; right: max(40px,calc((100% - 1120px)/2)); font-size: 11px; max-width: 430px; z-index: 4; }
+.stream-method summary { color: #9aabc1; cursor: pointer; text-align: right; min-height: 25px; }
+.stream-method[open] { background: rgba(8,13,24,.97); border: 1px solid #344056; border-radius: 12px; padding: 18px 22px; }
+.stream-method div { color: #bac6d7; font-size: 12px; padding-top: 12px; line-height: 1.65; }
+.stream-method p:last-child { margin-bottom: 0; }
+.stream-method a { color: #9fc8ff; }
+.profile-introduction { padding-block: 55px 40px; }
+.profile-introduction > p { font-size: 18px; line-height: 1.75; color: #525862; max-width: 920px; margin: 0 0 32px; }
+.research-index-nav { display: flex; flex-wrap: wrap; gap: 14px 32px; font-size: 13px; }
+.research-index-nav a { color: #3c506b; display: inline-flex; align-items: center; min-height: 38px; }
+.research-section { padding-block: 62px 68px; border-top: 1px solid #dce0e5; }
+.research-section-heading { display: flex; gap: 25px; align-items: baseline; margin-bottom: 42px; }
+.section-number { font-size: 12px; color: #8b939e; font-variant-numeric: tabular-nums; }
+.research-section-heading h2 { font-size: 36px; line-height: 1.2; letter-spacing: -.025em; margin: 0; font-weight: 500; }
+.research-section h3 { font-size: 21px; line-height: 1.3; font-weight: 600; letter-spacing: -.015em; margin-bottom: 18px; }
+.research-section p { color: #555b64; font-size: 16px; line-height: 1.8; }
+.research-row { display: grid; grid-template-columns: .86fr 1.14fr; align-items: start; gap: 56px; margin-bottom: 56px; }
+.research-row:last-child { margin-bottom: 0; }
+.research-copy p:last-child { margin-bottom: 0; }
+.research-figure { margin: 0; padding: 0; min-width: 0; }
+.research-figure > a { display: block; background: #fff; border: 1px solid #e5e7eb; padding: 12px; border-radius: 8px; }
+.research-figure img { width: 100%; height: auto; }
+.research-figure figcaption { color: #7a818c; font-size: 11px; line-height: 1.65; margin-top: 12px; }
+.research-figure figcaption a { color: #576b85; }
+.section-introduction { max-width: 900px; margin-bottom: 30px; }
+.method-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 60px; row-gap: 20px; margin-block: 35px 40px; }
+.method-grid h3 { font-size: 18px; margin-bottom: 12px; }
+.paper-figure-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start; margin-bottom: 36px; }
+.paper-figure-grid .research-figure > a { min-height: 285px; display: grid; align-items: center; }
+.moving-sequence { max-width: 840px; margin: 0 auto 42px; }
+.research-text-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+.research-text-columns p:last-child { margin-bottom: 0; }
+.skill-list { margin: 0; }
+.skill-list > div { display: grid; grid-template-columns: 240px 1fr; gap: 35px; border-bottom: 1px solid #e1e4e9; padding-block: 24px; }
+.skill-list > div:first-child { padding-top: 0; }
+.skill-list > div:last-child { border-bottom: 0; padding-bottom: 0; }
+.skill-list dt { font-size: 17px; font-weight: 500; }
+.skill-list dd { margin: 0; color: #555b64; font-size: 16px; line-height: 1.8; max-width: 720px; }
+@media (max-width: 899px) {
+  .stream-hero { height: calc(100svh - 63px); min-height: 650px; }
+  .hero-profile { top: 30px; gap: 17px; }
+  .profile-avatar { width: 65px; height: 65px; flex-basis: 65px; }
+  .hero-profile h1 { font-size: 34px; }
+  .hero-profile p { font-size: 12px; }
+  .stream-caption { gap: 20px; bottom: 54px; }
+  .stream-controls { width: 310px; padding: 10px 12px; }
+  .stream-caption > div:first-child { max-width: 245px; }
+  .stream-method { right: 24px; }
+  .research-row { grid-template-columns: 1fr; gap: 25px; margin-bottom: 45px; }
+  .research-row .research-figure { max-width: 780px; }
+  .research-section-heading h2 { font-size: 32px; }
+  .method-grid,.research-text-columns { gap: 25px 35px; }
+  .paper-figure-grid .research-figure > a { min-height: 190px; }
+  .skill-list > div { grid-template-columns: 190px 1fr; gap: 22px; }
+}
+@media (max-width: 600px) {
+  .stream-hero { min-height: 720px; }
+  .hero-profile { top: 25px; gap: 13px; align-items: start; }
+  .profile-avatar { width: 54px; height: 54px; flex-basis: 54px; border-radius: 8px; }
+  .hero-profile h1 { font-size: 28px; margin-bottom: 9px; }
+  .hero-profile p { font-size: 10px; max-width: 245px; line-height: 1.6; }
+  .stream-caption { flex-direction: column; align-items: stretch; gap: 12px; bottom: 48px; }
+  .stream-caption > div:first-child { max-width: none; }
+  .stream-caption .stream-caption-title { font-size: 15px; }
+  .stream-caption p { font-size: 11px; }
+  .stream-controls { width: 100%; max-width: 350px; padding: 7px 12px; align-self: stretch; }
+  .stream-method { right: 20px; max-width: calc(100% - 40px); }
+  .profile-introduction { padding-block: 35px 28px; }
+  .profile-introduction > p { font-size: 16px; margin-bottom: 22px; }
+  .research-index-nav { gap: 5px 20px; font-size: 12px; }
+  .research-index-nav a { min-height: 40px; }
+  .research-section { padding-block: 40px 45px; }
+  .research-section-heading { gap: 15px; margin-bottom: 30px; }
+  .research-section-heading h2 { font-size: 28px; }
+  .research-section p { font-size: 15px; }
+  .research-section h3 { font-size: 20px; }
+  .method-grid,.research-text-columns,.paper-figure-grid { grid-template-columns: 1fr; gap: 22px; }
+  .paper-figure-grid { margin-bottom: 28px; }
+  .paper-figure-grid .research-figure > a { min-height: 0; }
+  .research-figure > a { padding: 7px; }
+  .research-figure figcaption { font-size: 10px; }
+  .moving-sequence { margin-bottom: 32px; }
+  .method-grid { margin-block: 25px 28px; gap: 10px; }
+  .method-grid h3 { font-size: 18px; }
+  .skill-list > div { grid-template-columns: 1fr; gap: 10px; padding-block: 21px; }
+  .skill-list dd { font-size: 15px; }
+}
+@media print {
+  .stream-hero { height: 250px; min-height: 0; color: #000; background: #fff; }
+  #stream-canvas,.stream-caption,.stream-method { display: none; }
+  .hero-profile { top: 30px; }
+  .hero-profile p { color: #333; }
+  .research-section { padding-block: 25px; }
+  .research-row,.research-text-columns,.method-grid { break-inside: avoid; }
+}
+
+#stream-canvas[hidden] { display: none; }

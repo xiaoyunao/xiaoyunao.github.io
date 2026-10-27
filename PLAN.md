@@ -2,43 +2,36 @@
 
 ## Objective
 
-Maintain https://xiaoyunao.github.io exclusively from `/Users/island/Desktop/personal_page`. Current milestone completed: deployed the Apple-inspired UI refresh requested on 2026-10-27, with completed Chile/Blanco/IBIS observing, updated phone, and clearer name-variant metadata.
+Refine the existing homepage in `/Users/island/Desktop/personal_page` according to the user's detailed 2026-10-27 correction: four academic sections, manuscript figures, compact identity, consistent visual treatment, and a physically motivated near-full-screen 3D stream scene. Preserve the approved footer and established URL/search metadata.
 
 ## Milestones
 
-- [x] Recover history and verify the clean checkout is synchronized with origin/main.
-- [x] Read the supplied Apple reference and applicable Sites design/preview guidance.
-- [x] Redesign the homepage and shared archive/detail presentation; retain actual research and publication records.
-- [x] Update completed Blanco/DECam/IBIS observations and phone +1 (904) 983-7673.
-- [x] Add yunaoxiao identity alias and Yunao Xiao search title; preserve canonical URLs, verification, ORCID/GitHub and social-profile scope.
-- [x] Build safely and inspect desktop/tablet/phone layouts, mobile navigation and native disclosures.
-- [x] Finish site-wide link/asset checks, JS syntax and final whitespace review.
-- [x] Commit/push the refresh and verify the exact GitHub Pages deployment (`aa61526`, built 2026-10-27) and live content.
-
-## Preserved completed work
-
-- Illustrated avatar, research text including asteroid science, 10 verified journal articles plus a separate Palomar 5 preprint, full author lists and publication figures.
-- ORCID-based education records, including the PhD starting September 2025.
-- Search metadata, cleaned sitemap/sample exclusions, Search Console ownership verification, and the October 5 indexing request.
-- October 5 scope correction removed unrequested Instagram/TikTok homepage additions; these remain absent.
+- [x] Recover synchronized history and inspect the current implementation.
+- [x] Read the four supplied PDFs and verify relevant pages/captions.
+- [x] Extract genuine Palomar 5, GOTTA and SHARP manuscript figures with source notes.
+- [x] Rewrite and regroup content into Galactic science, time-domain/asteroid science, observing/DESI and skills.
+- [x] Remove slogans/name punctuation and oversized portrait; preserve footer.
+- [x] Generate physical 3D stream snapshots with Gala and validate numerical/export invariants.
+- [x] Integrate interactive playback, camera controls, physical scale, reduced-motion/offscreen behavior and static fallback.
+- [x] Finish responsive/browser and complete rendered-site validation.
+- [ ] Commit/push the refined design and verify its GitHub Pages deployment.
 
 ## Outstanding issues
 
-- The user reports first Google impressions on October 6, and homepage search results for yun-ao xiao / xiaoyunao. Yunao Xiao / yunaoxiao ranking remains weaker; metadata changes require Google's recrawl and cannot guarantee ranking.
-- The October 5 sitemap report showed Couldn't fetch despite successful direct/Google live fetch. Its current signed-in report has not been rechecked; the email alone does not resolve that status.
-- Palomar 5 remains a preprint in existing verified records; no publication-status changes were requested.
-- No paid hosting/domain, duplicate Sites deployment, social-profile changes, or scheduled monitoring is planned.
+- The homepage stream is an illustrative, static spherical-Milky-Way particle-release model, not the fitted Palomar 5 posterior or self-consistent N-body simulation. Its luminous Galaxy background is schematic; coordinate scales and tidal morphology come from physical trajectories.
+- Unidentified SHARP linkages remain candidates. Jupiter Trojan monitoring is in preparation. Publication status is unchanged; supplied private PDFs are not uploaded in full.
+- Existing Google query-ranking and signed-in sitemap-report follow-ups remain external to this visual/content correction.
 
 ## Validation criteria
 
-- Full portrait without cropping; all research topics and correct completed observing text/phone remain available.
-- One primary heading per page; responsive layouts without horizontal overflow; keyboard-accessible mobile nav/disclosures, reduced-motion support.
-- Published articles and preprints remain distinct; all 11 publication records and 3 education records retain working URLs.
-- Production-safe Jekyll build, internal link/asset/anchor checks, valid JSON-LD, JS syntax and git whitespace checks pass.
-- Google verification and canonical metadata remain; sitemap has unique real-content URLs and no maintenance docs/sample pages.
-- Meaningful changes and deployment results are recorded in git history and WORKLOG.
+- Exactly four research/experience sections, consistent backgrounds/typography, no rejected slogans or name-ending periods, compact avatar and unchanged footer.
+- Actual manuscript figures retain panels, axes and labels, with accurate captions and no fabricated confirmed-discovery claims.
+- Scientific integration conserves core energy to <1e-6 relative drift, exports finite active particles, preserves release ordering and position scale, and avoids quantization overflow/error >1 pc.
+- Model assets load; animation advances physical time, pauses and scrubs to endpoints; view presets/rotation work. Reduced-motion/offscreen behavior and static fallback are provided.
+- No horizontal overflow at desktop/tablet/phone widths; production-safe Jekyll, JS/Python syntax, internal links/assets/anchors, metadata and unchanged publication records pass.
+- Updated docs, git milestone and verified deployment preserve continuity.
 
 ## Next recommended steps
 
-1. After recrawling, compare the four name spellings in Search Console's query report; separately recheck the sitemap processing report when account access is available.
-2. Continue content maintenance only from this checkout.
+1. Finish QA and deploy this corrected iteration to the established GitHub Pages URL.
+2. Continue visual refinements from the user's feedback in this checkout; preserve factual tone and the four-part structure.

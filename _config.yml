@@ -164,6 +164,7 @@ exclude:
   - README.md
   - CHANGELOG.md
   - docs
+  - scripts # Optional scientific asset-generation tools, not site content.
   - .local
   - Gemfile.lock
   - "*.sublime-project"

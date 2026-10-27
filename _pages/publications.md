@@ -1,7 +1,6 @@
 ---
 layout: archive
 title: "Publications"
-intro: "Research, in print and in progress."
 description: "Journal articles and preprints by Yun-Ao Xiao, including first-author research and collaborative work in astronomy."
 permalink: /publications/
 author_profile: true

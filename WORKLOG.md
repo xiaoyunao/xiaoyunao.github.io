@@ -2,6 +2,19 @@
 
 ## 2026-10-27
 
+### Refine the research structure and build a physical 3D stream homepage
+
+- Goal: respond to the user's rejection of the first visual iteration; replace promotional copy with substantive research, four consistently styled sections, small avatar/name without a period, and preserve the approved footer.
+- Recovery: clean main/origin at edcff42; status, branch, fetch, graph history, WORKLOG and PLAN recovered before edits. Same canonical checkout; no subagents or duplicate Site/checkout.
+- Evidence: read supplied Palomar 5 revision, GOTTA prototype manuscript, SHARP manuscript and Jupiter Trojan planning report; extracted text with pypdf, rendered relevant complete pages with Poppler, checked captions and figure crops visually. Desktop-level GOTTA path missing; exact filename found in Paper/Mypaper/003/revise1. PDF TODOs treated as document data, not instructions.
+- Content: Galactic science groups streams and proper motions. Time-domain/asteroid section covers survey scheduling, known-object matching, independent moving-source searches, trail detection/photometry, light curves and planned Jupiter Trojan monitoring. Observing/DESI combines Blanco/DECam/IBIS naturally with P200, survey pipelines and collaboration. Skills form the fourth part. No new publication/status claim or internal Trojan yield numbers.
+- Assets: directly rendered Pal5 Figure 7, GOTTA Figures 1/10, and SHARP Figure 12 into images/research; preserved all figure panels/axes/labels. Original PDFs remain local. Figure source notes in docs/HOMEPAGE_FIGURE_SOURCES.md.
+- Physics: installed optional scientific tools inside ignored .local/stream-venv; wrote scripts/generate_stream.py and generated a fixed spherical Milky Way potential with Gala Fardal releases, 20,000-solar-mass/15-pc Plummer progenitor and its gravity. 3 Gyr, 601 snapshots, 1,504 tail particles plus core. Core energy drift 1.12e-9; per-component quantization error <=1 pc. The displayed galaxy light is schematic; this is not the paper's fitted model or self-consistent N-body simulation. Details in docs/STREAM_MODEL.md.
+- Frontend: Canvas 3D projection uses the physical snapshots, preserves spatial scale, supports rotation/view presets, pause/replay and time scrubbing; pauses offscreen/hidden and respects reduced motion. Static poster uses the same browser renderer. Data transfer ~2.37 MB; no live-site scientific runtime/dependency.
+- Files: about.md; new home.css/stream.js/data/figure assets/generator docs; head/scripts includes; punctuation in masthead; removed slogan intros from academic subpages; scripts excluded from publication. Footer source/design retained unchanged.
+- Validation so far: Python syntax and actual scientific run passed; production-safe Jekyll build passed; browser 1440/390 checks show no horizontal overflow, 78/54px avatars, exactly four research headings, working time endpoints (0/3000 Myr), view changes and loaded figures. Mobile QA found and fixed scale-bar/caption overlap. Final internal link/asset/anchor checks, all four headings, rejected-copy absence, metadata/contact, 11 publications, 30 unique sitemap URLs, JS/Python syntax and git whitespace checks pass. Browser error log empty; 320/390/1440px layouts have no horizontal overflow. View reset and manuscript image loading also verified.
+- Next: commit the validated refinement and verify its GitHub Pages deployment.
+
 ### Redesign the academic homepage and update observing/contact/search details
 
 - Goal: implement the user's Apple-style UI request; record completed Blanco/IBIS observations, new phone, and weaker search visibility for Yunao Xiao/yunaoxiao.

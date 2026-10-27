@@ -1,5 +1,9 @@
 ## 2026-10-27
 
+- Refine the homepage after user review: remove slogans/name punctuation, shrink the avatar, group the content into Galactic science, time-domain/asteroid science, observing/DESI, and skills, with consistent light sections and the existing footer retained.
+- Replace decorative research artwork with actual manuscript figure crops; expand the asteroid description to scheduling, known/unidentified-object searches, trail processing, photometry and planned Jupiter Trojan monitoring.
+- Add a near-full-screen, interactive 3D tidal-stream scene from reproducible Gala particle-release snapshots, with a physical scale, time/view controls and a static fallback.
+
 - Redesign the homepage and academic subpages with spacious typography, restrained blue accents, light/dark research sections and responsive navigation, following the supplied Apple design reference.
 - Mark the Chile Blanco/DECam/IBIS observing visit complete and update the contact number to +1 (904) 983-7673.
 - Improve Yunao Xiao/yunaoxiao search identity metadata while retaining established URLs, verification, and separate publication/preprint groups.

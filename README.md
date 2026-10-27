@@ -24,7 +24,11 @@ On another machine, install a compatible Ruby and Bundler first and omit the Mac
 ## Editing guide
 
 - `_pages/about.md`: complete homepage, using Liquid and semantic HTML to keep the large presentation sections predictable in Jekyll.
-- `assets/css/site.css`: shared Apple-inspired design system, responsive layouts and print/reduced-motion rules. The retained AcademicPages Sass is no longer the active screen stylesheet.
+- `assets/css/site.css`: shared navigation, inner pages and footer; the retained AcademicPages Sass is no longer the active screen stylesheet.
+- `assets/css/home.css`: restrained, consistent styling for the four homepage sections and near-full-screen stream scene.
+- `assets/js/stream.js` and `assets/data/tidal-stream.*`: playback of physical 3D Gala snapshots, with time/view controls, reduced-motion behavior and static fallback.
+- `scripts/generate_stream.py`: optional offline scientific asset generator. Reproduction, numerical checks and model assumptions: [docs/STREAM_MODEL.md](docs/STREAM_MODEL.md).
+- `images/research/`: figures extracted from the user's manuscripts; provenance and text boundaries: [docs/HOMEPAGE_FIGURE_SOURCES.md](docs/HOMEPAGE_FIGURE_SOURCES.md).
 - `assets/js/site.js`: accessible mobile menu; publication author lists and skills use native HTML disclosures.
 - `_layouts/home.html`, `_layouts/archive.html`, `_layouts/single.html`: homepage, collection lists, and detail-page layouts.
 - `_includes/masthead.html`, `_includes/footer.html`: shared navigation and contact area. `author.phone` and `author.phone_display` in `_config.yml` supply the clickable telephone number.

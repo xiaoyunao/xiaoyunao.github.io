@@ -1,0 +1,7 @@
+# Optional offline asset generation only; the website has no new dependencies.
+gala==1.12.0
+astropy==8.0.2
+numpy==2.3.5
+scipy==1.18.1
+h5py==3.16.0
+matplotlib==3.11.2

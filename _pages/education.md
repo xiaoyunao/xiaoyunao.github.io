@@ -1,7 +1,6 @@
 ---
 layout: archive
 title: "Education"
-intro: "A continuing journey in astronomy."
 description: "Education of Yun-Ao Xiao: astronomy PhD studies from September 2025 at NAOC, Chinese Academy of Sciences, and previous degrees."
 permalink: /education/
 author_profile: true
