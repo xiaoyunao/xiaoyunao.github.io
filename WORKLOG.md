@@ -2,6 +2,18 @@
 
 ## 2026-10-27
 
+### Polish the stream scene, simplify captions and embed four observation GIFs
+
+- Goal: implement the user's animation-focused revision: start at zero, faster playback, stronger galaxy art direction, remove defensive explanations/report-style captions, use Pal5 Figure 5 and the four Desktop GIFs.
+- Recovery: clean main/origin at da256d0; status/branch/fetch/history, WORKLOG and PLAN read before editing. Same canonical checkout; no subagents.
+- Scene: generated a transparent face-on galaxy texture with the built-in image_gen skill; exact source copy in images/milky-way-disk.png and prompt in docs/GALAXY_ASSET.md. Canvas projects it onto the disk with a feathered edge, warm core and restrained starfield; simplified cluster label and controls. Original Gala trajectories retained. Playback now starts at 0 Myr and advances at 24 Myr/s (previously 15); HTML output/slider and static poster start at zero.
+- Copy: removed the entire About this model panel, the quoted non-reproduction statement, manuscript/figure-number notes and image-level phrasing. Captions now describe the visual content directly; search-method prose is concise and positive.
+- Figures: inspected PDF page 10 and extracted the complete Pal5 Figure 5 into images/research/pal5-structure.png (1356×1293), retaining all four panels. Replaced the SHARP still sequence with a 2×2 gallery of the four exact Desktop GIFs.
+- GIFs: sources 20251204_0000098_link0274.gif, 20251204_000009h_link0306.gif, 20251208_00000cR_link1115.gif, 20251217_00000lw_link1025.gif. Each has three 485×485 frames with 600/600/1800 ms timings. Only the NETSCAPE loop-count bytes changed from 1 to 0; all decoded frame RGB hashes match originals.
+- Files: about.md, home.css, stream.js, texture/poster, Figure 5/GIF assets, model metadata/generator documentation and source notes. Footer and publication records retained.
+- Validation so far: Jekyll production-safe build, JS/Python syntax and whitespace checks pass. Browser confirms zero-time scrubbing, model/texture readiness, 1440px layout with no overflow and all four native GIFs loaded at 438px width. Final checks also pass: 320/390px widths without overflow, working View/Reset controls at 0.00 Gyr, empty browser error log, all generated links/assets/anchors, caption removals, Figure 5 and four GIF frame/timing checks; footer and 11 publication records unchanged.
+- Next: finish responsive QA, commit/push and verify the published content/assets.
+
 ### Refine the research structure and build a physical 3D stream homepage
 
 - Goal: respond to the user's rejection of the first visual iteration; replace promotional copy with substantive research, four consistently styled sections, small avatar/name without a period, and preserve the approved footer.

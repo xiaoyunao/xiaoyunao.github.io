@@ -1,5 +1,8 @@
 ## 2026-10-27
 
+- Refine the galaxy scene with a new disk texture and cleaner controls; begin at 0 Gyr and speed playback up by 60%.
+- Remove defensive model notes and manuscript-style image captions; use Palomar 5 Figure 5 and four continuously looping observation GIFs.
+
 - Refine the homepage after user review: remove slogans/name punctuation, shrink the avatar, group the content into Galactic science, time-domain/asteroid science, observing/DESI, and skills, with consistent light sections and the existing footer retained.
 - Replace decorative research artwork with actual manuscript figure crops; expand the asteroid description to scheduling, known/unidentified-object searches, trail processing, photometry and planned Jupiter Trojan monitoring.
 - Add a near-full-screen, interactive 3D tidal-stream scene from reproducible Gala particle-release snapshots, with a physical scale, time/view controls and a static fallback.

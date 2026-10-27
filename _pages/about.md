@@ -11,20 +11,19 @@ redirect_from:
   - /about.html
 ---
 
-<section class="stream-hero" aria-labelledby="intro-title" data-stream-model="{{ '/assets/data/tidal-stream.json' | relative_url }}" data-stream-binary="{{ '/assets/data/tidal-stream.bin.gz' | relative_url }}">
+<section class="stream-hero" aria-labelledby="intro-title" data-stream-model="{{ '/assets/data/tidal-stream.json' | relative_url }}" data-galaxy-texture="{{ '/images/milky-way-disk.png' | relative_url }}" data-stream-binary="{{ '/assets/data/tidal-stream.bin.gz' | relative_url }}">
 <canvas id="stream-canvas" aria-label="Three-dimensional model of a star cluster and its tidal stream orbiting the Milky Way. Use the view and playback controls below."></canvas>
 <div class="hero-profile shell">
 <img class="profile-avatar" src="{{ '/images/cartoon_selfie.png' | relative_url }}" alt="Illustrated portrait of Yun-Ao Xiao" width="1254" height="1254">
 <div><h1 id="intro-title">Yun-Ao Xiao</h1><p>肖云奥 · PhD student in Astrophysics<br>National Astronomical Observatories, Chinese Academy of Sciences</p></div>
 </div>
 <div class="stream-caption shell">
-<div><p class="stream-caption-title">Stellar-stream dynamics</p><p>A star cluster and its tidal tails in a Milky Way model.</p><span class="stream-load-status" role="status">Static preview</span></div>
+<div><p class="stream-caption-title">Stellar-stream dynamics</p><p>Drag to rotate the view.</p><span class="stream-load-status" role="status">Static preview</span></div>
 <div class="stream-controls" hidden>
-<div class="playback-row"><button type="button" id="stream-play" aria-label="Pause stream animation">Pause</button><button type="button" id="stream-view">Change view</button><button type="button" id="stream-reset">Reset view</button><output id="stream-time" for="stream-timeline">1.50 Gyr</output></div>
-<label class="timeline-label" for="stream-timeline">Time since first stellar release</label><input id="stream-timeline" type="range" min="0" max="3000" step="1" value="1500" aria-label="Time since first stellar release, in million years">
+<div class="playback-row"><button type="button" id="stream-play" aria-label="Pause stream animation">Pause</button><button type="button" id="stream-view" aria-label="Change viewing angle">View</button><button type="button" id="stream-reset" aria-label="Reset viewing angle">Reset</button><output id="stream-time" for="stream-timeline">0.00 Gyr</output></div>
+<label class="timeline-label sr-only" for="stream-timeline">Time since first stellar release</label><input id="stream-timeline" type="range" min="0" max="3000" step="1" value="0" aria-label="Time since first stellar release, in million years">
 </div>
 </div>
-<details class="stream-method"><summary>About this model</summary><div><p>Computed with <a href="https://gala.adrian.pw/en/latest/dynamics/mockstreams.html">gala</a>: stars escape from a Plummer cluster into leading and trailing tails under a Milky Way gravitational potential. The cluster mass is 20,000 solar masses and its Plummer scale is 15 pc. Positions and stream widths share the same physical scale.</p><p>The galaxy light distribution is schematic. This particle-release model illustrates tidal disruption; it is not a reproduction of the fitted stream in the paper. Star markers have a minimum screen size for visibility. Drag to rotate; use Change view for preset angles. Reduced-motion preferences are respected.</p></div></details>
 </section>
 
 <div class="profile-introduction shell">
@@ -36,7 +35,7 @@ redirect_from:
 <header class="research-section-heading"><span class="section-number">01</span><h2 id="galactic-heading">Galactic science</h2></header>
 <div class="research-row">
 <div class="research-copy"><h3>Stellar streams and the Galactic halo</h3><p>I study how stellar streams trace the assembly and gravitational potential of the Milky Way. My work on <strong>Palomar 5</strong> combines deep DESI Legacy Surveys imaging, photometric member selection, distance information and corrections for spatially varying survey depth.</p><p>I measure the stream track and cross-stream width, and compare the observed morphology with dynamical stream models to investigate the inner Galactic halo. I also work with Gaia astrometry and DESI spectroscopy to connect stream morphology with stellar kinematics and populations, and am interested in dwarf galaxies and tidal structures around nearby galaxies.</p></div>
-<figure class="research-figure"><a href="{{ '/images/research/pal5-morphology.png' | relative_url }}"><img src="{{ '/images/research/pal5-morphology.png' | relative_url }}" alt="Palomar 5 mock-stream density, observed and modeled stream track and width, and centroid residuals" width="1449" height="804" loading="lazy"></a><figcaption>Palomar 5 stream morphology and dynamical-model comparison. Figure 7 from my Palomar 5 manuscript.</figcaption></figure>
+<figure class="research-figure"><a href="{{ '/images/research/pal5-structure.png' | relative_url }}"><img src="{{ '/images/research/pal5-structure.png' | relative_url }}" alt="Stellar density, track, width and star counts along the Palomar 5 stream" width="1356" height="1293" loading="lazy"></a><figcaption>The structure of the Palomar 5 stellar stream.</figcaption></figure>
 </div>
 <div class="research-row">
 <div class="research-copy"><h3>Deep proper motions</h3><p>My <a href="https://doi.org/10.3847/1538-3881/adb72c">SDSS–DESI proper-motion work</a> uses imaging separated by roughly 13 years, with galaxies providing a stable reference frame. The catalog extends to approximately <em>r</em> = 23 over 12,589 square degrees, complementing Gaia at faint magnitudes.</p><p>I use these measurements with photometric and spectroscopic information to identify distant stellar populations and study substructures in the Galactic halo.</p><a class="text-link" href="{{ '/publications/' | relative_url }}">Publications <span aria-hidden="true">↗</span></a></div>
@@ -50,14 +49,20 @@ redirect_from:
 <div class="method-grid">
 <div><h3>Survey planning</h3><p>Dynamic field selection and repeat-visit scheduling account for target visibility, lunar geometry, accumulated sky coverage and follow-up needs. The <a href="https://github.com/xiaoyunao/ASAS">survey scheduler</a> is one part of this observing and processing system.</p></div>
 <div><h3>Known-object recovery</h3><p>I match calibrated image catalogs to predicted asteroid positions, reject stationary-source contamination, and combine detections with orbital and observing geometry to evaluate the recovered sample and measurement quality.</p></div>
-<div><h3>Searches for unidentified moving sources</h3><p>After stationary and known-object subtraction, I construct tracklets and same-night linkages, test short-arc consistency, and inspect the image sequences. Candidate linkages require catalog reconciliation and further observations before they can be identified as distinct objects or discoveries.</p></div>
-<div><h3>Trails and physical characterization</h3><p>I work on image-level detection and photometry of trailed sources, accounting for motion during an exposure. Calibrated light curves and period analysis support studies of asteroid rotation and the monitoring of possible activity.</p></div>
+<div><h3>Searches for unidentified moving sources</h3><p>I search repeated observations for objects moving against the background stars, connect their detections into trajectories, and use follow-up observations to establish their identities and orbits.</p></div>
+<div><h3>Trails and physical characterization</h3><p>I develop methods to detect and measure trailed sources, accounting for their motion during an exposure. Calibrated light curves and period analysis support studies of asteroid rotation and the monitoring of possible activity.</p></div>
 </div>
 <div class="paper-figure-grid">
-<figure class="research-figure"><a href="{{ '/images/research/gotta-known-asteroids.png' | relative_url }}"><img src="{{ '/images/research/gotta-known-asteroids.png' | relative_url }}" alt="A GOTTA Prototype exposure with recovered asteroids marked and four corresponding image cutouts" width="1221" height="612" loading="lazy"></a><figcaption>Known-asteroid recovery in a GOTTA Prototype exposure. Figure 1 from my GOTTA manuscript.</figcaption></figure>
-<figure class="research-figure"><a href="{{ '/images/research/gotta-lightcurves.png' | relative_url }}"><img src="{{ '/images/research/gotta-lightcurves.png' | relative_url }}" alt="Two folded asteroid light curves, with a reliable rotation solution on the left and a tentative candidate on the right" width="1284" height="495" loading="lazy"></a><figcaption>Rotation-period analysis: a reliable solution (left) and a tentative candidate (right). Figure 10 from the GOTTA manuscript.</figcaption></figure>
+<figure class="research-figure"><a href="{{ '/images/research/gotta-known-asteroids.png' | relative_url }}"><img src="{{ '/images/research/gotta-known-asteroids.png' | relative_url }}" alt="A GOTTA Prototype exposure with recovered asteroids marked and four corresponding image cutouts" width="1221" height="612" loading="lazy"></a><figcaption>Asteroids observed by the GOTTA Prototype.</figcaption></figure>
+<figure class="research-figure"><a href="{{ '/images/research/gotta-lightcurves.png' | relative_url }}"><img src="{{ '/images/research/gotta-lightcurves.png' | relative_url }}" alt="Two asteroid rotation light curves" width="1284" height="495" loading="lazy"></a><figcaption>Asteroid rotation light curves.</figcaption></figure>
 </div>
-<figure class="research-figure moving-sequence"><a href="{{ '/images/research/sharp-moving-source.png' | relative_url }}"><img src="{{ '/images/research/sharp-moving-source.png' | relative_url }}" alt="Three SHARP frames showing the displacement of a candidate moving source relative to background stars" width="1491" height="498" loading="lazy"></a><figcaption>Image-level review of a SHARP moving-source linkage across three exposures. Figure 12 from the SHARP manuscript; this is a candidate sequence, not a confirmed discovery.</figcaption></figure>
+<div class="asteroid-gallery" aria-label="Asteroids moving across successive exposures">
+<figure><img src="{{ '/images/research/asteroid-01.gif' | relative_url }}" alt="Moving object in successive observations, sequence 1" width="485" height="485" loading="lazy"></figure>
+<figure><img src="{{ '/images/research/asteroid-02.gif' | relative_url }}" alt="Moving object in successive observations, sequence 2" width="485" height="485" loading="lazy"></figure>
+<figure><img src="{{ '/images/research/asteroid-03.gif' | relative_url }}" alt="Moving object in successive observations, sequence 3" width="485" height="485" loading="lazy"></figure>
+<figure><img src="{{ '/images/research/asteroid-04.gif' | relative_url }}" alt="Moving object in successive observations, sequence 4" width="485" height="485" loading="lazy"></figure>
+</div>
+<p class="gallery-caption">Moving objects in successive observations.</p>
 <div class="research-text-columns"><div><h3>Jupiter Trojan monitoring</h3><p>We are preparing a monitoring program for <strong>Jupiter Trojans</strong>, using repeated photometry to study rotation periods and light-curve amplitudes. Current preparation focuses on observing windows, cadence, cross-night photometric consistency and period ambiguities.</p></div><div><h3>Time-domain applications</h3><p>The repeated imaging also supports the development of calibrated light curves and image-subtraction analyses for variable and transient sources. For active asteroids, I am interested in combining photometric changes, image morphology and orbital context to investigate the onset and evolution of activity.</p></div></div>
 </section>
 

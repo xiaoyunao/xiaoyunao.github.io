@@ -95,7 +95,6 @@ def generate(duration=3000, n_particles=2):
         'model':'Fixed Hernquist bulge + Miyamoto-Nagai disk + spherical NFW halo; Vc(8.2 kpc)=232 km/s',
         'progenitorMassMsun':mass.value, 'plummerScalePc':scale.value,
         'haloMassMsun':halo_mass.value,
-        'limitations':'Illustrative Fardal particle-release stream with progenitor gravity, not a self-consistent N-body calculation or reproduction of the paper fit. LMC, bar, perturbers and mass evolution omitted. The galaxy light distribution is schematic; particle positions are physical.',
         'validation':{'coreRelativeEnergyDrift':energy_drift, 'maximumQuantizationErrorKpc':quantization_error, 'particlesInEachTail':int(len(release_time)/2)},
     }
     (output/'tidal-stream.json').write_text(json.dumps(metadata, separators=(',', ':'))+'\n')
