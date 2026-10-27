@@ -2,6 +2,15 @@
 
 ## 2026-10-27
 
+### Restore four titled skill entries with substantive descriptions
+
+- Goal: correct the interpretation of Skills: retain four titled points and expand the substance of each, rather than merely prefixing fragments with I or removing the item structure.
+- Recovery: clean synchronized main/origin at 7439089 after status/branch/fetch/history and WORKLOG/PLAN reads.
+- Evidence: existing homepage and earlier 374b8f7 copy supply the computing, pipeline, AI/agent, instrumentation and observing experience; no new credentials added.
+- Files: about.md now has four titled articles with detailed first-person paragraphs; home.css restores readable label/content rows with mobile stacking; README/instructions corrected. Animation and other content unchanged.
+- Validation: production-safe Jekyll build and whitespace checks pass. Browser confirms exactly four titled items with 65/69/70/65-word paragraphs, no overflow at 1280px or 390px, and a single-column title/body layout on mobile. Error log empty. Screenshot: .local/skills-four-detailed-items.png.
+- Next: publish and verify live entries and stylesheet.
+
 ### Loop the stellar-stream animation and write Skills as first-person prose
 
 - Goal: automatically restart playback at zero after the final frame; replace Skills fragments with normal I-based sentences.

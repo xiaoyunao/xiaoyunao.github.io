@@ -65,7 +65,12 @@
 .research-section .gallery-caption { max-width: 900px; margin: 12px auto 38px; color: #7a818c; font-size: 12px; }
 .research-text-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
 .research-text-columns p:last-child { margin-bottom: 0; }
-.skills-copy { max-width: 900px; }
+.skill-list { display: grid; }
+.skill-item { display: grid; grid-template-columns: 240px 1fr; gap: 35px; padding-block: 28px; border-bottom: 1px solid #e1e4e9; }
+.skill-item:first-child { padding-top: 0; }
+.skill-item:last-child { padding-bottom: 0; border-bottom: 0; }
+.research-section .skill-item h3 { margin: 3px 0 0; font-size: 18px; font-weight: 500; }
+.skill-item p { max-width: 720px; margin: 0; }
 @media (max-width: 899px) {
   .stream-hero { height: calc(100svh - 63px); min-height: 650px; }
   .hero-profile { top: 30px; gap: 17px; }
@@ -80,6 +85,7 @@
   .research-section-heading h2 { font-size: 32px; }
   .method-grid,.research-text-columns { gap: 25px 35px; }
   .paper-figure-grid .research-figure > a { min-height: 190px; }
+  .skill-item { grid-template-columns: 190px 1fr; gap: 22px; }
 }
 @media (max-width: 600px) {
   .stream-hero { min-height: 720px; }
@@ -109,6 +115,8 @@
   .asteroid-gallery { gap: 8px; }
   .method-grid { margin-block: 25px 28px; gap: 10px; }
   .method-grid h3 { font-size: 18px; }
+  .skill-item { grid-template-columns: 1fr; gap: 14px; padding-block: 24px; }
+  .research-section .skill-item h3 { margin-top: 0; }
 }
 @media print {
   .stream-hero { height: 250px; min-height: 0; color: #000; background: #fff; }

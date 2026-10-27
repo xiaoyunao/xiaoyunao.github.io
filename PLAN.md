@@ -2,27 +2,25 @@
 
 ## Objective
 
-Automatically loop the opening stellar-stream animation from the end back to 0 Gyr, and write Skills as complete first-person paragraphs.
+Keep Skills as four distinct titled items and write a substantive first-person paragraph for each: Scientific computing, Survey pipelines, AI-assisted development and Instrumentation.
 
 ## Milestones
 
-- [x] Recover synchronized repository context.
-- [x] Restart active playback at zero while preserving 48 Myr/s speed, pause and time controls.
-- [x] Replace Skills fragments with first-person prose and simplify its layout.
-- [x] Validate production output and browser endpoint/pause behavior.
-- [x] Publish and verify the live update (1d4c307).
+- [x] Recover synchronized repository context and review established experience.
+- [x] Restore four titled items and expand each description with concrete tools, work and context.
+- [x] Validate the production build and rendered desktop/mobile layout.
+- [ ] Publish and verify the live update.
 
 ## Outstanding issues
 
-- No implementation blocker. Preserve four content sections, the single-row GIF gallery, small avatar, footer, contact data, search identity and publication status.
-- Existing Google query/sitemap follow-ups are separate from this revision.
+- No implementation blocker. Preserve the looping stream at 48 Myr/s, single-row GIF gallery, other content sections, footer, contact data and publication status.
 
 ## Validation criteria
 
-- Playing through the endpoint restarts at zero and continues automatically; pause and scrubbing still work.
-- Skills contains normal first-person paragraphs and remains readable without overflow.
-- Production-safe Jekyll build, JS syntax and focused browser checks pass.
-- Verified deployment is recorded in git history and WORKLOG.
+- Exactly four titled skill entries, each with a detailed first-person paragraph grounded in existing project information.
+- Clear desktop and mobile layout without horizontal overflow.
+- Production-safe Jekyll build and whitespace checks pass.
+- Live content and stylesheet verified; deployment recorded in git history and WORKLOG.
 
 ## Next recommended steps
 
