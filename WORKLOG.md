@@ -9,7 +9,8 @@
 - Evidence: existing homepage and earlier 374b8f7 copy supply the computing, pipeline, AI/agent, instrumentation and observing experience; no new credentials added.
 - Files: about.md now has four titled articles with detailed first-person paragraphs; home.css restores readable label/content rows with mobile stacking; README/instructions corrected. Animation and other content unchanged.
 - Validation: production-safe Jekyll build and whitespace checks pass. Browser confirms exactly four titled items with 65/69/70/65-word paragraphs, no overflow at 1280px or 390px, and a single-column title/body layout on mobile. Error log empty. Screenshot: .local/skills-four-detailed-items.png.
-- Next: publish and verify live entries and stylesheet.
+- Deployment: 5aa83ff pushed to main; GitHub Pages built the exact commit without errors at 2026-10-27T08:32:20Z (16:32:20 Asia/Shanghai). Live HTML confirms all four titled detailed entries; live stylesheet matches source byte-for-byte. Initial pre-build check saw the old HTML; a transient TLS failure on the CSS fetch was resolved by a successful curl retry.
+- Result: four-item structure and substantive descriptions are online.
 
 ### Loop the stellar-stream animation and write Skills as first-person prose
 

@@ -9,7 +9,7 @@ Keep Skills as four distinct titled items and write a substantive first-person p
 - [x] Recover synchronized repository context and review established experience.
 - [x] Restore four titled items and expand each description with concrete tools, work and context.
 - [x] Validate the production build and rendered desktop/mobile layout.
-- [ ] Publish and verify the live update.
+- [x] Publish and verify the live update (5aa83ff).
 
 ## Outstanding issues
 
