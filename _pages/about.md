@@ -11,14 +11,14 @@ redirect_from:
   - /about.html
 ---
 
-<section class="stream-hero" aria-labelledby="intro-title" data-stream-model="{{ '/assets/data/tidal-stream.json' | relative_url }}" data-galaxy-texture="{{ '/images/milky-way-disk.png' | relative_url }}" data-stream-binary="{{ '/assets/data/tidal-stream.bin.gz' | relative_url }}">
-<canvas id="stream-canvas" aria-label="Three-dimensional model of a star cluster and its tidal stream orbiting the Milky Way. Use the view and playback controls below."></canvas>
+<section class="stream-hero" aria-labelledby="intro-title" data-stream-model="{{ '/assets/data/tidal-stream.json' | relative_url }}?v=population-20261027" data-galaxy-texture="{{ '/images/milky-way-disk.png' | relative_url }}" data-stream-binary="{{ '/assets/data/tidal-stream.bin.gz' | relative_url }}?v=population-20261027">
+<canvas id="stream-canvas" aria-label="Three-dimensional tidal streams from three globular clusters and three dwarf galaxies of different masses orbiting the Milky Way. Use the view and playback controls below."></canvas>
 <div class="hero-profile shell">
 <img class="profile-avatar" src="{{ '/images/cartoon_selfie.png' | relative_url }}" alt="Illustrated portrait of Yun-Ao Xiao" width="1254" height="1254">
 <div><h1 id="intro-title">Yun-Ao Xiao</h1><p>肖云奥 · PhD student in Astrophysics<br>National Astronomical Observatories, Chinese Academy of Sciences</p></div>
 </div>
 <div class="stream-caption shell">
-<div><p class="stream-caption-title">Stellar-stream dynamics</p><p>Drag to rotate the view.</p><span class="stream-load-status" role="status">Static preview</span></div>
+<div><p class="stream-caption-title">Stellar-stream dynamics</p><p>3 globular clusters · 3 dwarf galaxies</p><p>Drag to rotate the view.</p><span class="stream-load-status" role="status">Static preview</span></div>
 <div class="stream-controls" hidden>
 <div class="playback-row"><button type="button" id="stream-play" aria-label="Pause stream animation">Pause</button><button type="button" id="stream-view" aria-label="Change viewing angle">View</button><button type="button" id="stream-reset" aria-label="Reset viewing angle">Reset</button><output id="stream-time" for="stream-timeline">0.00 Gyr</output></div>
 <label class="timeline-label sr-only" for="stream-timeline">Time since first stellar release</label><input id="stream-timeline" type="range" min="0" max="3000" step="1" value="0" aria-label="Time since first stellar release, in million years">

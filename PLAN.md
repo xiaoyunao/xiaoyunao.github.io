@@ -2,26 +2,28 @@
 
 ## Objective
 
-Keep Skills as four distinct titled items and write a substantive first-person paragraph for each: Scientific computing, Survey pipelines, AI-assisted development and Instrumentation.
+Expand the homepage animation to six physical stellar streams: three globular-cluster masses and three dwarf-galaxy masses on distinct orbits. Use one shared leading-tail color and one shared trailing-tail color, while preserving 0 Gyr start, 48 Myr/s and automatic looping.
 
 ## Milestones
 
-- [x] Recover synchronized repository context and review established experience.
-- [x] Restore four titled items and expand each description with concrete tools, work and context.
-- [x] Validate the production build and rendered desktop/mobile layout.
-- [x] Publish and verify the live update (5aa83ff).
+- [x] Recover synchronized repository context and inspect the current generator/renderer.
+- [x] Generate six Gala streams with varied masses, sizes and orbital initial conditions.
+- [x] Extend the renderer to multiple progenitors with common tail colors and a clear composition.
+- [x] Validate numerical exports, browser controls, desktop/mobile visuals and static poster.
+- [ ] Publish and verify live HTML, data and renderer.
 
 ## Outstanding issues
 
-- No implementation blocker. Preserve the looping stream at 48 Myr/s, single-row GIF gallery, other content sections, footer, contact data and publication status.
+- Preserve the four detailed Skills items, the single-row GIF gallery, other content sections and the footer.
+- An existing untracked .DS_Store belongs to local filesystem state; leave it uncommitted.
 
 ## Validation criteria
 
-- Exactly four titled skill entries, each with a detailed first-person paragraph grounded in existing project information.
-- Clear desktop and mobile layout without horizontal overflow.
-- Production-safe Jekyll build and whitespace checks pass.
-- Live content and stylesheet verified; deployment recorded in git history and WORKLOG.
+- Three clusters and three dwarf galaxies have distinct masses and orbital parameters, physical finite coordinates, correct release/tail membership, bounded quantization error and stable core energy.
+- Shared leading/trailing colors apply to all six streams; viewing/time controls and automatic loops work.
+- Visual layout and runtime remain usable at desktop and mobile widths; no browser errors.
+- Production-safe build, JS/Python syntax, updated model documentation and deployment verification pass.
 
 ## Next recommended steps
 
-1. Continue user-directed refinements from the canonical checkout.
+1. Finish the multi-stream visual revision in the canonical checkout.

@@ -2,6 +2,19 @@
 
 ## 2026-10-27
 
+### Add a six-stream population of globular clusters and dwarf galaxies
+
+- Goal: three different-mass globular clusters plus three different-mass dwarf galaxies on varied orbits, with common leading/trailing colors.
+- Recovery: main/origin synchronized at 9acf2fb; status/branch/fetch/history and WORKLOG/PLAN read. Existing .DS_Store left untouched.
+- Investigation: current generator exports one fixed-mass Plummer progenitor; renderer assumes core index zero. Reviewed installed Gala 1.12 run/snapshot API and official mock-stream documentation before extending both formats.
+- Generator: six separate Gala/Fardal integrations with Plummer masses/scales 2e4/15pc, 1e5/25pc, 5e5/45pc (clusters), 1e7/250pc, 5e7/450pc, 2e8/700pc (dwarfs). Distinct nodes/inclinations/speeds, 3 Gyr forward, 10 Myr frames and 12 Myr releases. Schema v2 records per-stream index ranges and orbit/mass metadata.
+- Renderer: projects all six streams/cores in one coordinate system; shared #add2ff leading and #f1cf9a trailing colors; core markers use each Plummer scale; small desktop type/mass labels avoid overlap, wider framing fits the population. Caption counts and accessible canvas description updated; body content after the hero and footer are byte-identical.
+- Data: 301 frames, 4,518 tracers plus six cores; gzip 3,843,030 bytes; 0.003 kpc quantization, maximum per-component error 1.5 pc. Maximum core relative energy drift 2.60e-9. 120 Myr smoke integration and full integration both pass finite-position, release-count, balanced-tail, energy and quantization assertions.
+- Validation: decoded final binary checked for indices/coverage, distinct masses/orbital poles, core/tail membership, release masks and sentinel consistency. Python/JS syntax, production-safe Jekyll build, whitespace and generated HTML/asset/version checks pass. Browser confirms six streams at 2.4 Gyr, 2999 Myr wraps to 13–20 Myr while playing, pause/view/reset work; 1280/390/320 layouts have no overflow and error log is empty.
+- Poster: captured the actual six-core canvas at exactly 0 Gyr via a temporary local capture page; final build removes the fixture. Screenshots: .local/six-streams-desktop.png and six-streams-mobile.png. Data and poster URLs versioned to avoid stale one-stream caches.
+- Files: generate_stream.py, stream.js, binary/JSON, poster, hero caption/ARIA, home.css, model/README/continuity docs.
+- Next: publish and verify live assets.
+
 ### Restore four titled skill entries with substantive descriptions
 
 - Goal: correct the interpretation of Skills: retain four titled points and expand the substance of each, rather than merely prefixing fragments with I or removing the item structure.

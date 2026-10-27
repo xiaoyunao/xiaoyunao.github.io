@@ -19,16 +19,11 @@
   let age = 0, playing = !reducedMotion.matches, visible = true;
   let lastTime = null, raf = null, backgroundDirty = true, lastPaint = 0;
   let model, positions, particles, frames, stride, galaxyTexture;
+  let progenitors = [];
   const background = document.createElement('canvas');
   const backdrop = background.getContext('2d', { alpha: false });
   let seed = 20261027;
   const random = () => { seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0; return seed / 4294967296; };
-  const normal = () => Math.sqrt(-2 * Math.log(Math.max(random(), 1e-10))) * Math.cos(2 * Math.PI * random());
-  const coreStars = Array.from({ length: 100 }, () => {
-    const radius = Math.min(.075, .015 / Math.sqrt(Math.max(random(), .001) ** (-2 / 3) - 1));
-    const z = random() * 2 - 1, angle = random() * Math.PI * 2;
-    return [radius * Math.sqrt(1 - z * z) * Math.cos(angle), radius * Math.sqrt(1 - z * z) * Math.sin(angle), radius * z];
-  });
   const fieldStars = Array.from({ length: 150 }, () => [random(), random(), .25 + random() * .5, .1 + random() * .3]);
   const projection = (x, y, z) => {
     const a = Math.cos(yaw) * x - Math.sin(yaw) * y;
@@ -66,8 +61,8 @@
     dpr = Math.min(devicePixelRatio || 1, 1.5);
     canvas.width = background.width = Math.round(width * dpr);
     canvas.height = background.height = Math.round(height * dpr);
-    scale = Math.min(width / (width < 600 ? 47 : 50), height / 36);
-    cx = width * (width < 600 ? .5 : .55); cy = height * (width < 600 ? .44 : .52);
+    scale = Math.min(width / (width < 600 ? 64 : 70), height / 57);
+    cx = width * (width < 600 ? .5 : .53); cy = height * (width < 600 ? .45 : .52);
     backgroundDirty = true; requestFrame();
   };
   const setPlayLabel = () => {
@@ -87,41 +82,57 @@
       if (positions[base] === -32768) return null;
       return [0, 1, 2].map(axis => (positions[base + axis] * (1 - mix) + positions[next + axis] * mix) * model.scaleKpc);
     };
-    const core = sample(0), projectedCore = projection(...core);
-    // Position-space density is not thickened. The sub-pixel stellar markers are
-    // a display convention, not physical radii or an artificial ribbon width.
     const streamPoints = [];
-    for (let i = 1; i < particles; i++) {
-      if (age < model.releaseMyr[i]) continue;
-      const p = sample(i); if (!p) continue;
-      const point = projection(...p);
-      streamPoints.push({ point, tail: model.tail[i], fresh: Math.min(1, (age - model.releaseMyr[i]) / 12) });
+    for (const stream of model.streams) {
+      const end = stream.particleStart + stream.particleCount;
+      for (let i = stream.particleStart; i < end; i++) {
+        if (age < model.releaseMyr[i]) continue;
+        const p = sample(i); if (!p) continue;
+        streamPoints.push({point: projection(...p), tail: model.tail[i],
+          fresh: Math.min(1, (age - model.releaseMyr[i]) / 12)});
+      }
     }
     streamPoints.sort((a, b) => a.point[2] - b.point[2]);
-    for (const { point: [x, y, depth], tail, fresh } of streamPoints) {
+    const starRadius = width < 600 ? .72 : .9;
+    for (const {point: [x, y, depth], tail, fresh} of streamPoints) {
       if (x < 0 || x > width || y < 0 || y > height) continue;
-      // Mild disk extinction only when a distant stream star projects onto it.
       const r = Math.hypot((x - cx) / scale, (y - cy) / (scale * Math.max(.1, Math.cos(tilt))));
-      const alpha = (depth < -2 && r < 13 ? .32 : .8) * fresh;
-      context.fillStyle = tail === 'l' ? `rgba(173,210,255,${alpha})` : `rgba(241,207,154,${alpha})`;
-      const radius = width < 600 ? .8 : .95;
-      context.beginPath(); context.arc(x, y, radius, 0, Math.PI * 2); context.fill();
+      context.globalAlpha = (depth < -2 && r < 13 ? .36 : .82) * fresh;
+      context.fillStyle = model.colors[tail === 'l' ? 'leading' : 'trailing'];
+      context.beginPath(); context.arc(x, y, starRadius, 0, Math.PI * 2); context.fill();
     }
-    context.fillStyle = 'rgba(247,242,224,.3)';
-    for (const delta of coreStars) {
-      const [x, y] = projection(core[0] + delta[0], core[1] + delta[1], core[2] + delta[2]);
-      context.fillRect(x, y, .65, .65);
+    context.globalAlpha = 1;
+    const cores = progenitors.map(stream => ({...stream, position: sample(stream.coreIndex)}));
+    cores.sort((a, b) => projection(...a.position)[2] - projection(...b.position)[2]);
+    const labels = [];
+    context.font = '10px -apple-system, BlinkMacSystemFont, sans-serif';
+    for (const stream of cores) {
+      const core = stream.position;
+      context.fillStyle = 'rgba(247,242,224,.32)';
+      for (const delta of stream.stars) {
+        const [x, y] = projection(core[0] + delta[0], core[1] + delta[1], core[2] + delta[2]);
+        context.fillRect(x, y, .65, .65);
+      }
+      const [px, py] = projection(...core);
+      if (px < -20 || px > width + 20 || py < -20 || py > height + 20) continue;
+      const glowRadius = Math.max(5, stream.plummerScalePc * .001 * scale * 2);
+      glow(context, px, py, glowRadius, '255,237,199', stream.kind === 'dwarf' ? .2 : .3);
+      context.fillStyle = '#fff3dc';
+      context.beginPath(); context.arc(px, py, stream.kind === 'dwarf' ? 1.3 : 1.15, 0, Math.PI * 2); context.fill();
+      if (width < 720) continue;
+      const textWidth = context.measureText(stream.caption).width;
+      for (const [dx, dy] of [[13, -11], [13, 19], [-textWidth - 13, -11], [-textWidth - 13, 19]]) {
+        const box = {x: px + dx, y: py + dy - 10, w: textWidth, h: 14};
+        if (box.x < 12 || box.x + box.w > width - 12 || box.y < 165 || box.y + box.h > height - 130) continue;
+        if (labels.some(other => box.x < other.x + other.w + 8 && box.x + box.w + 8 > other.x && box.y < other.y + other.h + 6 && box.y + box.h + 6 > other.y)) continue;
+        context.fillStyle = 'rgba(218,227,240,.7)';
+        context.fillText(stream.caption, box.x, box.y + 10);
+        labels.push(box);
+        break;
+      }
     }
-    const [px, py] = projectedCore;
-    const labelDirection = px > width - 105 ? -1 : 1;
-    glow(context, px, py, 8, '255,237,199', .32);
-    context.fillStyle = '#fff3dc';
-    context.beginPath(); context.arc(px, py, 1.5, 0, Math.PI * 2); context.fill();
-    context.font = '11px -apple-system, BlinkMacSystemFont, sans-serif';
-    context.fillStyle = 'rgba(234,238,245,.85)';
-    context.textAlign = labelDirection === 1 ? 'left' : 'right';
-    context.fillText('Star cluster', px + labelDirection * 13, py - 10);
-    context.textAlign = 'left';
+    canvas.dataset.streamCount = String(model.streams.length);
+    canvas.dataset.visibleStreamParticles = String(streamPoints.length);
     slider.value = String(Math.round(age)); output.textContent = `${(age / 1000).toFixed(2)} Gyr`;
     canvas.dataset.modelTimeMyr = String(Math.round(age));
   };
@@ -157,6 +168,19 @@
     }
     positions = new Int16Array(buffer); particles = model.particleCount; frames = model.frameCount; stride = particles * 3;
     if (positions.length !== frames * stride) throw new Error('Invalid snapshot dimensions');
+    if (model.schemaVersion !== 2 || model.streams.length !== 6) throw new Error('Invalid stream population');
+    const superscripts = '⁰¹²³⁴⁵⁶⁷⁸⁹';
+    progenitors = model.streams.map(stream => {
+      const exponent = Math.floor(Math.log10(stream.massMsun));
+      const coefficient = stream.massMsun / 10 ** exponent;
+      const massLabel = `${coefficient === 1 ? '' : coefficient + ' × '}10${superscripts[exponent]} M☉`;
+      const stars = Array.from({length: stream.kind === 'dwarf' ? 220 : 100}, () => {
+        const radius = Math.min(5, 1 / Math.sqrt(Math.max(random(), .001) ** (-2 / 3) - 1)) * stream.plummerScalePc * .001;
+        const z = random() * 2 - 1, angle = random() * Math.PI * 2;
+        return [radius * Math.sqrt(1 - z * z) * Math.cos(angle), radius * Math.sqrt(1 - z * z) * Math.sin(angle), radius * z];
+      });
+      return {...stream, stars, caption: `${stream.kind === 'dwarf' ? 'Dwarf' : 'GC'} · ${massLabel}`};
+    });
     galaxyTexture = document.createElement('canvas');
     galaxyTexture.width = texture.naturalWidth; galaxyTexture.height = texture.naturalHeight;
     const imageContext = galaxyTexture.getContext('2d');
