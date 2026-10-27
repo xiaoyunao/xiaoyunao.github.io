@@ -8,7 +8,8 @@
 - Recovery: clean main/origin at d3e0893; status/branch/fetch/history and WORKLOG/PLAN reviewed.
 - Files: home.css uses four equal columns, 16px desktop/8px mobile gaps; stream.js advances at 48 Myr/s (62.5 seconds for 3 Gyr); model docs and continuity instructions updated.
 - Validation: production-safe Jekyll build, JS syntax and git whitespace checks pass. Browser confirms all four GIFs loaded, share one row at 213px each on a 1280px viewport, with no horizontal overflow; timeline advances and browser error log is empty. Screenshot: .local/gif-single-row.png.
-- Next: publish and verify the live CSS and animation script.
+- Deployment: a5ccabf pushed to main; GitHub Pages confirms exact commit built at 2026-10-27T08:23:14Z. Live versioned CSS and animation-script SHA-256 values match the source.
+- Result: requested single-row gallery and doubled playback are online; no outstanding issue.
 
 ### Polish the stream scene, simplify captions and embed four observation GIFs
 

@@ -13,7 +13,7 @@ Apply the latest 2026-10-27 layout/playback adjustment: four smaller observation
 - [x] Extract Palomar 5 Figure 5 and embed all four Desktop observation GIFs in a compact single row.
 - [x] Validate GIF frame identity/timing and continuous looping, plus zero-time/texture/browser checks.
 - [x] Complete final mobile/rendered-site checks.
-- [ ] Commit/push and verify the latest single-row/speed update on GitHub Pages.
+- [x] Commit/push and verify the latest single-row/speed update on GitHub Pages (a5ccabf).
 
 ## Outstanding issues
 
