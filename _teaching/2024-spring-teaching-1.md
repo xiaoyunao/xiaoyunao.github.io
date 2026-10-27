@@ -1,5 +1,5 @@
 ---
-title: "Astronomical Data Reducation, Teaching Assistant"
+title: "Astronomical Data Reduction, Teaching Assistant"
 collection: teaching
 type: "Graduate course"
 permalink: /teaching/2024-spring-teaching-1

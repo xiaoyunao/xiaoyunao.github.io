@@ -4,6 +4,7 @@ main:
     url: /publications/
 
   - title: "Conferences & Workshops"
+    nav_title: "Conferences"
     url: /talks/    
 
   - title: "Teaching"

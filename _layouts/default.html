@@ -11,16 +11,16 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body class="{% if page.layout == 'home' %}home-page{% else %}content-page{% endif %}">
+    <a class="skip-link" href="#main">Skip to content</a>
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
     {{ content }}
 
-    <div class="page__footer">
+    <div class="page__footer" id="contact">
       <footer>
-        {% include footer/custom.html %}
         {% include footer.html %}
       </footer>
     </div>

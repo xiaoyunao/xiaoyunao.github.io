@@ -70,7 +70,7 @@ og_image                 : "cartoon_selfie.png"
 social:
   type                   : Person
   name                   : "Yun-Ao Xiao"
-  alternate_names        : ["肖云奥", "Yunao Xiao", "xiaoyunao"]
+  alternate_names        : ["肖云奥", "Yunao Xiao", "xiaoyunao", "yunaoxiao"]
   links:
     - https://orcid.org/0009-0004-2243-8289
     - https://github.com/xiaoyunao
@@ -91,7 +91,9 @@ author:
                        <br>
                       A20, Datun Road, Chaoyang District, Beijing 100012, China<br>
                        <br>
-                      Tel: +44-7526 328476"
+                      Tel: +1 (904) 983-7673"
+  phone            : "+19049837673"
+  phone_display    : "+1 (904) 983-7673"
   location         : "Beijing, China"
   employer         :
   pubmed           :

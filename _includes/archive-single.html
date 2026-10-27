@@ -30,7 +30,7 @@
       {% if post.link %}
         <a href="{{ post.link }}" rel="external">{{ title }}</a>
       {% else %}
-        <a href="{{ post.link }}" rel="external">{{ title }}</a>
+        <a href="{{ post.url | relative_url }}">{{ title }}</a>
       {% endif %}
     </h2>
     

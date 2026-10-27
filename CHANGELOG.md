@@ -1,3 +1,10 @@
+## 2026-10-27
+
+- Redesign the homepage and academic subpages with spacious typography, restrained blue accents, light/dark research sections and responsive navigation, following the supplied Apple design reference.
+- Mark the Chile Blanco/DECam/IBIS observing visit complete and update the contact number to +1 (904) 983-7673.
+- Improve Yunao Xiao/yunaoxiao search identity metadata while retaining established URLs, verification, and separate publication/preprint groups.
+- Fix the teaching archive's empty title link and the course title spelling.
+
 ## 2026-10-05
 
 - Revert the new visible name-variant paragraph and Instagram/TikTok links/metadata after the user clarified that social-account discoverability should be addressed separately from the homepage.

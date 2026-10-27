@@ -1,5 +1,19 @@
 # Work log
 
+## 2026-10-27
+
+### Redesign the academic homepage and update observing/contact/search details
+
+- Goal: implement the user's Apple-style UI request; record completed Blanco/IBIS observations, new phone, and weaker search visibility for Yunao Xiao/yunaoxiao.
+- Recovery: clean main synchronized with origin/main at 12ac434; ran status, branch, fetch, graph history, WORKLOG/PLAN/README reads before edits. Used the designated checkout only.
+- Design: followed Sites presentation/local-preview guidance and https://getdesign.md/apple/design-md. This is the existing GitHub Pages site; Sites hosting cannot directly deploy to its GitHub repository. No duplicate Site or checkout created.
+- Files: homepage; home/archive/single/talk layouts; shared head/nav/footer/scripts/SEO; new site.css/site.js and decorative SVGs; configuration/navigation; publication category links; education/talk/teaching headings; README, search docs, changelog and continuity docs.
+- Content: retained existing research paragraphs and publication records/statuses. Chile observing now explicitly completed with Blanco/DECam/IBIS; phone +1 (904) 983-7673 with tel:+19049837673. Fixed empty teaching archive link and Reduction spelling.
+- Search finding: supplied Google email reports first impressions on Oct 6. Added yunaoxiao to existing Person aliases, Yunao Xiao to the search title, stable identity id/portrait/affiliation. Retained canonical URLs, verification, ORCID/GitHub and no social-profile additions. No ranking guarantee or new Search Console submission claimed; sitemap account report not rechecked.
+- Commands: production-safe Jekyll build; Python rendered HTML/JSON-LD/link/sitemap checks; browser desktop/tablet/phone review; git diff checks. Initial visual QA caught nested Markdown rendering as literal tags; converted text blocks to semantic HTML and rebuilt. Link checker initially misclassified a protocol-relative external URL; corrected checker. System node absent; use the bundled runtime for JS syntax check.
+- Validation so far: homepage content/metadata assertions pass; 30 unique sitemap URLs; responsive widths 1440/721/390/320 have no homepage overflow; mobile menu and native disclosures reviewed. Final internal link/asset/anchor, JSON-LD, five primary headings, all 11 publication URLs, JS syntax and git whitespace checks passed.
+- Next: commit/push the validated refresh and verify GitHub Pages serves it.
+
 ## 2026-10-05
 
 ### Correct scope: remove unrequested homepage social-profile additions

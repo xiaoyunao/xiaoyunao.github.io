@@ -12,9 +12,17 @@ Canonical site: https://xiaoyunao.github.io/ (GitHub Pages; no paid domain or se
 
 ## Scope of identity information
 
-- Keep the previously approved Person name (Yun-Ao Xiao), aliases (Yunao Xiao, 肖云奥, xiaoyunao), and ORCID/GitHub sameAs URLs.
+- Keep the previously approved Person name (Yun-Ao Xiao), aliases (Yunao Xiao, 肖云奥, xiaoyunao, yunaoxiao), and ORCID/GitHub sameAs URLs.
 - The user clarified that Instagram/TikTok discoverability is a separate goal. Do not add those profiles, extra name-variant prose, or TikTok aliases to this homepage.
 - Search Console ownership of this GitHub Pages site does not give control over indexing or ranking of social-network profiles.
+
+## October 2026 search update
+
+- On 2026-10-27 the user supplied Google's email reporting first Search Console impressions on October 6, and reported that `yun-ao xiao` and `xiaoyunao` return the homepage. This confirms some search visibility; it does not establish equal ranking for all name variants.
+- The homepage title now includes both Yun-Ao Xiao and Yunao Xiao. The description keeps xiaoyunao, and Person `alternateName` now also includes yunaoxiao. A stable Person `@id`, portrait, role and affiliation connect the existing ORCID/GitHub identity.
+- Preserve the verification token, canonical URL, URLs and sitemap. No social-account links or visible alias paragraph have been added. The October 5 prohibition on adding social profiles still applies.
+- Inspect **Performance → Search results → Queries** in Search Console, filtering each spelling, to compare impressions and clicks. Results differ by query, location, time and search history. Metadata supports entity understanding but cannot force a spelling to rank.
+- Assess the changes after Google recrawls; no immediate ranking result is claimed. The old sitemap processing error has not been rechecked in the signed-in account during this refresh.
 
 ## Account setup
 

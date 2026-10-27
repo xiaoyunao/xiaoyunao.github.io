@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Publications"
+intro: "Research, in print and in progress."
 description: "Journal articles and preprints by Yun-Ao Xiao, including first-author research and collaborative work in astronomy."
 permalink: /publications/
 author_profile: true
@@ -13,18 +14,20 @@ author_profile: true
 
 <p>{{ published.size }} journal articles, including {{ coauthored.size }} co-authored papers, and {{ preprints.size }} preprint. See also my <a href="https://orcid.org/0009-0004-2243-8289">ORCID record</a>.</p>
 
-<h2>First-author publications</h2>
+<nav class="publication-nav" aria-label="Publication categories"><a href="#first-author">First author</a><a href="#coauthored">Co-authored</a><a href="#preprints">Preprints</a></nav>
+
+<h2 id="first-author">First-author publications</h2>
 {% for post in first_author %}
   {% include publication-entry.html post=post %}
 {% endfor %}
 
-<h2>Co-authored publications</h2>
+<h2 id="coauthored">Co-authored publications</h2>
 {% for post in coauthored %}
   {% include publication-entry.html post=post %}
 {% endfor %}
 
 {% if preprints.size > 0 %}
-<h2>Preprints</h2>
+<h2 id="preprints">Preprints</h2>
 {% for post in preprints %}
   {% include publication-entry.html post=post %}
 {% endfor %}

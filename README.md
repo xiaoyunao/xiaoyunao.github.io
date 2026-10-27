@@ -23,8 +23,12 @@ On another machine, install a compatible Ruby and Bundler first and omit the Mac
 
 ## Editing guide
 
-- `_pages/about.md`: biography and My Research (Markdown with optional HTML figures).
-- `_config.yml`: site identity, author profile, and avatar filename.
+- `_pages/about.md`: complete homepage, using Liquid and semantic HTML to keep the large presentation sections predictable in Jekyll.
+- `assets/css/site.css`: shared Apple-inspired design system, responsive layouts and print/reduced-motion rules. The retained AcademicPages Sass is no longer the active screen stylesheet.
+- `assets/js/site.js`: accessible mobile menu; publication author lists and skills use native HTML disclosures.
+- `_layouts/home.html`, `_layouts/archive.html`, `_layouts/single.html`: homepage, collection lists, and detail-page layouts.
+- `_includes/masthead.html`, `_includes/footer.html`: shared navigation and contact area. `author.phone` and `author.phone_display` in `_config.yml` supply the clickable telephone number.
+- `_config.yml`: site identity, search aliases, author profile, phone number, and avatar filename.
 - `_publications/*.md`: one paper per file, with verified authors, status, dates, journal information, and links.
 - `_pages/publications.md` and `_includes/publication-entry.html`: publication groups and list presentation.
 - `_data/navigation.yml`: visible menu entries. Unused template pages and sample posts are excluded from the published site in `_config.yml`; replace placeholders and remove the corresponding exclusion before enabling them.

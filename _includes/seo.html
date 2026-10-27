@@ -114,6 +114,10 @@
     {
       "@context" : "https://schema.org",
       "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
+      "@id" : {{ seo_url | append: '/#person' | jsonify }},
+      "image" : {{ site.author.avatar | prepend: '/images/' | prepend: seo_url | jsonify }},
+      "jobTitle" : "PhD student in Astrophysics",
+      "affiliation" : {"@type": "Organization", "name": "National Astronomical Observatories, Chinese Academy of Sciences"},
       "name" : {{ site.social.name | default: site.name | jsonify }},
       {% if site.social.alternate_names %}"alternateName" : {{ site.social.alternate_names | jsonify }},{% endif %}
       "url" : {{ seo_url | jsonify }},

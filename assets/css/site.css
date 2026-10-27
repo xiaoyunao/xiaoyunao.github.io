@@ -1,0 +1,1292 @@
+/* Shared presentation for the homepage, archives and detail pages. */
+:root {
+  --ink:#1d1d1f;
+  --muted:#626267;
+  --blue:#0066cc;
+  --paper:#f5f5f7;
+  --line:#d9d9de;
+  --dark:#101114;
+  --shell:1120px;
+  --radius:24px;
+}
+* {
+  box-sizing:border-box;
+}
+html {
+  scroll-behavior:smooth;
+  scroll-padding-top:90px;
+}
+body {
+  margin:0;
+  color:var(--ink);
+  background:#fff;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+button,input {
+  font:inherit;
+}
+button,a {
+  -webkit-tap-highlight-color:transparent;
+}
+a {
+  color:var(--blue);
+  text-decoration:none;
+  text-underline-offset:4px;
+}
+a:hover {
+  text-decoration:underline;
+}
+a:focus-visible,button:focus-visible,summary:focus-visible {
+  outline:3px solid #0071e3;
+  outline-offset:5px;
+  border-radius:4px;
+}
+img,svg {
+  max-width:100%;
+  height:auto;
+}
+img {
+  display:block;
+}
+figure {
+  margin:0;
+}
+h1,h2,h3,h4,p {
+  margin-top:0;
+}
+h1,h2,h3,h4 {
+  line-height:1.12;
+  letter-spacing:-.035em;
+  font-weight:600;
+}
+p {
+  margin-bottom:1.2em;
+}
+strong {
+  font-weight:600;
+}
+.shell {
+  width:min(var(--shell),calc(100% - 80px));
+  margin-inline:auto;
+}
+.eyebrow {
+  font-size:12px;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  font-weight:600;
+  color:var(--muted);
+  margin-bottom:20px;
+}
+.button {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  min-height:46px;
+  padding:10px 24px;
+  background:var(--blue);
+  color:#fff;
+  border:1px solid var(--blue);
+  border-radius:999px;
+  font-size:15px;
+  line-height:1.4;
+  transition:background .2s;
+}
+.button:hover {
+  background:#0071e3;
+  text-decoration:none;
+}
+.text-link {
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  font-size:17px;
+}
+.button-row {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:26px;
+}
+.skip-link {
+  position:fixed;
+  top:-100px;
+  left:16px;
+  padding:12px 20px;
+  background:#fff;
+  z-index:100;
+}
+.skip-link:focus {
+  top:12px;
+}
+.site-header {
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(250,250,252,.91);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(0,0,0,.07);
+}
+.site-nav {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  min-height:68px;
+  gap:30px;
+}
+.site-brand {
+  font-size:20px;
+  font-weight:600;
+  letter-spacing:-.7px;
+  color:var(--ink);
+  white-space:nowrap;
+}
+.site-brand:hover {
+  text-decoration:none;
+}
+.brand-dot {
+  color:var(--blue);
+}
+.navigation-links {
+  display:flex;
+  align-items:center;
+  gap:27px;
+}
+.navigation-links a {
+  color:#454549;
+  font-size:12px;
+  line-height:1.3;
+  min-height:44px;
+  display:flex;
+  align-items:center;
+}
+.navigation-links a:hover,.navigation-links a[aria-current] {
+  color:var(--blue);
+  text-decoration:none;
+}
+.navigation-links .nav-contact {
+  min-height:32px;
+  background:var(--ink);
+  color:#fff;
+  padding:7px 16px;
+  border-radius:999px;
+}
+.menu-toggle {
+  display:none;
+}
+.hero {
+  padding-block:92px 66px;
+  display:grid;
+  grid-template-columns:1.18fr 1fr;
+  gap:48px;
+  align-items:center;
+}
+.hero h1 {
+  font-size:clamp(48px,5.8vw,78px);
+  line-height:1.04;
+  margin-bottom:20px;
+  letter-spacing:-.06em;
+}
+.hero-tagline {
+  font-size:clamp(28px,3vw,39px);
+  line-height:1.17;
+  color:var(--muted);
+  font-weight:500;
+  letter-spacing:-.035em;
+  margin-bottom:28px;
+}
+.hero-description {
+  font-size:18px;
+  max-width:410px;
+  color:var(--muted);
+  margin-bottom:28px;
+}
+.hero .eyebrow {
+  font-size:11px;
+  letter-spacing:.12em;
+}
+.hero-portrait {
+  background:#faf9f6;
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+.hero-portrait img {
+  width:100%;
+  aspect-ratio:1;
+  object-fit:contain;
+}
+.identity-line {
+  display:flex;
+  align-items:center;
+  gap:16px;
+  color:var(--muted);
+  font-size:13px;
+  margin-top:23px;
+}
+.identity-line span+span {
+  border-left:1px solid var(--line);
+  padding-left:16px;
+}
+.about-strip {
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:60px;
+  border-top:1px solid var(--line);
+  padding-block:38px 60px;
+}
+.about-strip h2 {
+  font-size:25px;
+  margin-bottom:8px;
+}
+.about-strip .eyebrow {
+  margin-bottom:10px;
+}
+.about-strip p {
+  font-size:17px;
+  margin:0;
+  color:var(--muted);
+}
+.section {
+  padding-block:92px;
+}
+.section-heading {
+  margin-bottom:48px;
+}
+.section-heading h2,.section-title {
+  font-size:clamp(36px,4.4vw,54px);
+  margin-bottom:25px;
+  line-height:1.08;
+}
+.section-heading>p:last-child {
+  max-width:780px;
+  color:var(--muted);
+  font-size:20px;
+}
+.research-intro {
+  background:var(--paper);
+  padding-bottom:0;
+}
+.research-intro .section-heading {
+  margin-bottom:50px;
+}
+.research-feature {
+  position:relative;
+  background:var(--dark);
+  color:#f5f5f7;
+  border-radius:var(--radius);
+  padding:62px;
+  overflow:hidden;
+}
+.research-feature .eyebrow {
+  color:#a1a1a8;
+}
+.research-feature h3 {
+  font-size:clamp(32px,3.6vw,44px);
+  margin-bottom:24px;
+}
+.research-feature a {
+  color:#8fc6ff;
+}
+.stream-layout {
+  display:grid;
+  grid-template-columns:1fr 1.05fr;
+  gap:48px;
+  align-items:center;
+}
+.stream-visual {
+  width:100%;
+  max-height:330px;
+  opacity:.9;
+}
+.research-feature p {
+  color:#bebec5;
+  font-size:17px;
+}
+.research-feature p:last-child {
+  margin-bottom:0;
+}
+.research-feature .full-copy {
+  margin-top:28px;
+  max-width:850px;
+}
+.research-index {
+  display:inline-block;
+  font-size:12px;
+  letter-spacing:.12em;
+  color:var(--muted);
+  margin-bottom:20px;
+}
+.astrometry {
+  background:var(--paper);
+  padding-block:72px 92px;
+}
+.astrometry-grid {
+  display:grid;
+  grid-template-columns:.95fr 1.1fr;
+  gap:64px;
+  align-items:start;
+}
+.astrometry h3,.asteroids h3 {
+  font-size:40px;
+  margin-bottom:24px;
+}
+.astrometry-copy p {
+  color:var(--muted);
+}
+.science-figure {
+  background:#fff;
+  border-radius:18px;
+  padding:22px;
+}
+.science-figure img {
+  width:100%;
+}
+.science-figure figcaption {
+  font-size:12px;
+  color:var(--muted);
+  padding-top:16px;
+  line-height:1.5;
+}
+.research-stats {
+  display:flex;
+  gap:40px;
+  margin-top:30px;
+  padding-top:24px;
+  border-top:1px solid var(--line);
+}
+.research-stats strong {
+  font-size:30px;
+  font-weight:500;
+  display:block;
+  letter-spacing:-1px;
+}
+.research-stats span {
+  font-size:12px;
+  color:var(--muted);
+}
+.asteroids {
+  padding-block:90px;
+}
+.asteroid-heading {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:50px;
+  margin-bottom:38px;
+}
+.asteroid-heading h3 {
+  max-width:580px;
+  margin-bottom:0;
+}
+.orbit-visual {
+  width:250px;
+  flex-shrink:0;
+}
+.two-column-copy {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:64px;
+  color:var(--muted);
+}
+.two-column-copy p:last-child {
+  margin-bottom:0;
+}
+.research-note {
+  margin-top:44px;
+  border-top:1px solid var(--line);
+  padding-top:26px;
+  color:var(--muted);
+  font-size:15px;
+  max-width:920px;
+}
+.research-note p {
+  margin-bottom:0;
+}
+.observing-section {
+  background:var(--ink);
+  color:#fff;
+}
+.observing-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  align-items:start;
+}
+.observing-section .eyebrow {
+  color:#a7a7ad;
+}
+.observing-section .section-title {
+  max-width:450px;
+}
+.observing-section p {
+  color:#bcbcc3;
+}
+.observing-section a {
+  color:#8fc6ff;
+}
+.status-label {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:#b9e9cc;
+  font-size:12px;
+  border:1px solid #4c5c50;
+  padding:6px 12px;
+  border-radius:999px;
+  margin-bottom:25px;
+}
+.status-label::before {
+  content:"";
+  width:6px;
+  height:6px;
+  background:#98d7af;
+  border-radius:50%;
+}
+.observing-title {
+  font-size:27px;
+  line-height:1.2;
+  margin-bottom:18px;
+}
+.observing-note {
+  font-size:14px;
+}
+.skills-grid {
+  display:grid;
+  grid-template-columns:.85fr 1.3fr;
+  gap:80px;
+}
+.skills-heading {
+  position:sticky;
+  top:115px;
+  align-self:start;
+}
+.skills-heading .section-title {
+  font-size:48px;
+}
+.skills-tags {
+  color:var(--muted);
+  font-size:14px;
+  line-height:2.1;
+}
+.detail-row {
+  border-top:1px solid var(--line);
+  padding:23px 0;
+}
+.detail-row:last-child {
+  border-bottom:1px solid var(--line);
+}
+.detail-row summary {
+  list-style:none;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  font-size:20px;
+  font-weight:600;
+  letter-spacing:-.02em;
+  min-height:30px;
+}
+.detail-row summary::-webkit-details-marker {
+  display:none;
+}
+.detail-row summary::after {
+  content:"+";
+  font-size:25px;
+  color:var(--muted);
+  font-weight:300;
+}
+.detail-row[open] summary::after {
+  content:"−";
+}
+.detail-row>div {
+  padding-top:20px;
+  color:var(--muted);
+  font-size:16px;
+}
+.detail-row>div p:last-child {
+  margin:0;
+}
+.collaboration-section {
+  background:var(--paper);
+}
+.collaboration-grid {
+  display:grid;
+  grid-template-columns:1fr 1.6fr;
+  gap:90px;
+}
+.collaboration-grid .section-title {
+  font-size:46px;
+}
+.collaboration-copy {
+  color:var(--muted);
+}
+.section-header-row {
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:30px;
+  margin-bottom:44px;
+}
+.section-header-row h2 {
+  font-size:48px;
+  margin:0;
+}
+.section-header-row .eyebrow {
+  margin-bottom:14px;
+}
+.selected-paper {
+  display:grid;
+  grid-template-columns:140px 1fr 40px;
+  gap:35px;
+  align-items:start;
+  padding:32px 0;
+  border-top:1px solid var(--line);
+}
+.selected-paper:last-child {
+  border-bottom:1px solid var(--line);
+}
+.selected-paper .paper-status {
+  font-size:12px;
+  display:block;
+  color:var(--muted);
+  margin-bottom:6px;
+}
+.selected-paper time {
+  font-size:20px;
+  font-weight:500;
+}
+.selected-paper h3 {
+  font-size:25px;
+  line-height:1.25;
+  margin-bottom:12px;
+}
+.selected-paper h3 a {
+  color:var(--ink);
+}
+.selected-paper p {
+  color:var(--muted);
+  font-size:14px;
+  margin:0;
+}
+.paper-arrow {
+  font-size:26px;
+  min-width:44px;
+  min-height:44px;
+  display:grid;
+  place-items:center;
+}
+.page__footer {
+  background:var(--paper);
+}
+.site-footer {
+  padding-block:65px 25px;
+}
+.footer-heading {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:30px;
+  padding-bottom:45px;
+  border-bottom:1px solid var(--line);
+}
+.footer-heading .eyebrow {
+  margin-bottom:12px;
+}
+.footer-heading h2 {
+  font-size:40px;
+  margin:0;
+}
+.footer-columns {
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1fr;
+  gap:45px;
+  padding:40px 0;
+}
+.footer-columns h3 {
+  font-size:14px;
+  letter-spacing:0;
+  margin-bottom:14px;
+  line-height:1.5;
+}
+.footer-columns h3 span {
+  margin-left:8px;
+  color:var(--muted);
+  font-weight:400;
+}
+.footer-columns p,.footer-columns ul {
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.9;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.footer-columns a {
+  color:var(--muted);
+}
+.footer-separator {
+  padding-inline:8px;
+  color:#aaa;
+}
+.footer-bottom {
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  border-top:1px solid var(--line);
+  padding-top:20px;
+  font-size:11px;
+  color:var(--muted);
+}
+.footer-bottom a {
+  color:var(--muted);
+  margin-left:22px;
+}
+.document-shell {
+  padding-block:76px 100px;
+  min-height:55vh;
+  max-width:1000px;
+}
+.document-shell--reading {
+  max-width:900px;
+}
+.document-heading {
+  padding-bottom:42px;
+  border-bottom:1px solid var(--line);
+  margin-bottom:42px;
+}
+.document-heading h1 {
+  font-size:clamp(34px,4.5vw,58px);
+  line-height:1.12;
+  margin-bottom:24px;
+  overflow-wrap:break-word;
+}
+.document-heading h1:last-child {
+  margin-bottom:0;
+}
+.document-heading .eyebrow a {
+  color:var(--muted);
+}
+.document-intro {
+  font-size:20px;
+  color:var(--muted);
+  max-width:780px;
+  margin:0;
+}
+.document-body h2 {
+  font-size:30px;
+  margin-block:48px 24px;
+}
+.document-body h3 {
+  font-size:23px;
+  margin-block:26px 14px;
+  line-height:1.3;
+}
+.document-body p {
+  max-width:850px;
+}
+.document-body figure {
+  max-width:760px;
+  margin-block:30px;
+}
+.document-body figcaption {
+  font-size:13px;
+  color:var(--muted);
+  margin-top:14px;
+}
+.document-body pre {
+  overflow:auto;
+  padding:20px;
+  background:var(--paper);
+  border-radius:12px;
+  font-size:14px;
+}
+.document-body code {
+  font-size:.88em;
+}
+.document-body table {
+  border-collapse:collapse;
+  width:100%;
+  font-size:15px;
+  display:block;
+  overflow-x:auto;
+}
+.document-body th,.document-body td {
+  padding:12px;
+  text-align:left;
+  border-bottom:1px solid var(--line);
+}
+.education-entry {
+  padding-bottom:30px;
+  border-bottom:1px solid var(--line);
+}
+.education-entry:last-child {
+  border-bottom:0;
+}
+.education-entry h2 a {
+  color:var(--ink);
+}
+.publication-entry {
+  padding:30px 0;
+  border-bottom:1px solid var(--line);
+}
+.publication-entry h3 {
+  margin-top:0;
+  font-size:25px;
+}
+.publication-entry h3 a {
+  color:var(--ink);
+}
+.publication-entry__citation {
+  font-size:14px;
+  color:var(--muted);
+}
+.publication-entry__authors,.publication-entry__author-list,.publication-entry__links {
+  font-size:14px;
+}
+.publication-entry p {
+  margin-bottom:12px;
+}
+.publication-entry__author-list {
+  margin-bottom:16px;
+}
+.publication-entry__author-list summary {
+  cursor:pointer;
+  color:var(--blue);
+  min-height:36px;
+  padding-block:5px;
+}
+.publication-entry__author-list[open] summary {
+  margin-bottom:10px;
+}
+.publication-entry__figure {
+  max-width:640px!important;
+}
+.archive__item {
+  padding-block:25px;
+  border-bottom:1px solid var(--line);
+}
+.archive__item-title {
+  margin-top:0!important;
+}
+.archive__item-title a {
+  color:var(--ink);
+}
+.archive__item-excerpt p {
+  margin:0;
+}
+.archive__item .page__meta {
+  font-size:14px;
+  color:var(--muted);
+}
+.sr-only {
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+.citation {
+  font-size:14px;
+  color:var(--muted);
+}
+.publication-nav {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-block:28px 48px;
+}
+.publication-nav a {
+  font-size:14px;
+  padding:8px 18px;
+  border-radius:999px;
+  background:var(--paper);
+  color:var(--ink);
+  min-height:42px;
+}
+.publication-nav a:hover {
+  background:#e9e9ed;
+  text-decoration:none;
+}
+@media(min-width:900px) {
+  .menu-toggle {
+    display:none!important;
+  }
+}
+@media(max-width:1100px) {
+  .navigation-links {
+    gap:18px;
+  }
+  .hero {
+    gap:32px;
+  }
+  .hero h1 {
+    font-size:62px;
+  }
+  .hero-tagline {
+    font-size:33px;
+  }
+  .hero {
+    padding-top:72px;
+  }
+  .research-feature {
+    padding:42px;
+  }
+  .astrometry-grid {
+    gap:35px;
+  }
+  .skills-grid,.observing-grid,.collaboration-grid {
+    gap:45px;
+  }
+}
+@media(max-width:899px) {
+  .shell {
+    width:calc(100% - 48px);
+  }
+  .site-nav {
+    flex-wrap:wrap;
+    gap:0;
+    min-height:62px;
+  }
+  .site-brand {
+    font-size:19px;
+  }
+  .menu-toggle:not([hidden]) {
+    display:flex;
+    align-items:center;
+    gap:12px;
+    border:0;
+    background:none;
+    padding:12px 0 12px 20px;
+    font-size:13px;
+    min-height:44px;
+    color:var(--ink);
+    cursor:pointer;
+  }
+  .menu-icon {
+    width:17px;
+    height:9px;
+    border-block:1px solid currentColor;
+  }
+  .navigation-links {
+    width:100%;
+    padding-block:12px 23px;
+    gap:0;
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .navigation-links a {
+    font-size:16px;
+    min-height:48px;
+  }
+  .navigation-links .nav-contact {
+    align-self:flex-start;
+    margin-top:8px;
+    padding:10px 22px;
+  }
+  .navigation-ready .navigation-links {
+    display:none;
+  }
+  .navigation-ready .navigation-links.is-open {
+    display:flex;
+  }
+  .hero {
+    padding-block:60px 50px;
+    gap:30px;
+  }
+  .hero h1 {
+    font-size:48px;
+  }
+  .hero-tagline {
+    font-size:28px;
+  }
+  .hero-description {
+    font-size:16px;
+  }
+  .hero .eyebrow {
+    font-size:10px;
+  }
+  .hero .button-row {
+    gap:20px;
+  }
+  .hero .text-link {
+    font-size:15px;
+  }
+  .hero .button {
+    font-size:14px;
+    padding:10px 20px;
+  }
+  .about-strip {
+    grid-template-columns:1fr 2fr;
+    gap:30px;
+  }
+  .stream-layout {
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+  }
+  .section {
+    padding-block:70px;
+  }
+  .section-heading h2 {
+    font-size:44px;
+  }
+  .research-feature {
+    padding:36px;
+  }
+  .research-feature h3 {
+    font-size:35px;
+  }
+  .research-feature p {
+    font-size:16px;
+  }
+  .astrometry-grid {
+    grid-template-columns:1fr;
+  }
+  .science-figure {
+    max-width:620px;
+  }
+  .astrometry {
+    padding-block:60px 70px;
+  }
+  .research-intro {
+    padding-bottom:0;
+  }
+  .two-column-copy {
+    gap:35px;
+  }
+  .skills-grid {
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+  .skills-heading {
+    position:static;
+  }
+  .skills-heading .section-title {
+    font-size:42px;
+  }
+  .observing-grid {
+    gap:40px;
+  }
+  .observing-grid .section-title {
+    font-size:40px;
+  }
+  .collaboration-grid {
+    grid-template-columns:1fr 1.5fr;
+    gap:40px;
+  }
+  .collaboration-grid .section-title {
+    font-size:36px;
+  }
+  .selected-paper {
+    grid-template-columns:110px 1fr 30px;
+    gap:20px;
+  }
+  .footer-columns {
+    gap:30px;
+  }
+  .document-shell {
+    padding-block:60px 80px;
+  }
+  .document-heading h1 {
+    font-size:45px;
+  }
+}
+@media(max-width:600px) {
+  .shell {
+    width:calc(100% - 40px);
+  }
+  .hero {
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    padding-block:46px 35px;
+    gap:36px;
+  }
+  .hero h1 {
+    font-size:52px;
+  }
+  .hero-tagline {
+    font-size:32px;
+    max-width:340px;
+  }
+  .hero-description {
+    font-size:17px;
+    max-width:350px;
+  }
+  .hero-portrait {
+    max-width:420px;
+    width:100%;
+    align-self:center;
+    border-radius:18px;
+  }
+  .hero .eyebrow {
+    font-size:10px;
+  }
+  .identity-line {
+    font-size:12px;
+    margin-top:20px;
+  }
+  .about-strip {
+    grid-template-columns:1fr;
+    gap:18px;
+    padding-block:28px 45px;
+  }
+  .about-strip h2 {
+    font-size:24px;
+  }
+  .about-strip p {
+    font-size:16px;
+  }
+  .section {
+    padding-block:56px;
+  }
+  .section-heading {
+    margin-bottom:32px;
+  }
+  .section-heading h2 {
+    font-size:37px;
+  }
+  .section-heading>p:last-child {
+    font-size:18px;
+  }
+  .research-intro {
+    padding-bottom:0;
+  }
+  .research-feature {
+    padding:30px 25px;
+    border-radius:20px;
+  }
+  .stream-layout {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:stretch;
+  }
+  .research-feature h3 {
+    font-size:34px;
+  }
+  .stream-visual {
+    max-height:200px;
+    margin-block:10px;
+  }
+  .research-feature .full-copy {
+    margin-top:12px;
+  }
+  .astrometry {
+    padding-block:45px 56px;
+  }
+  .astrometry h3,.asteroids h3 {
+    font-size:34px;
+  }
+  .astrometry-grid {
+    gap:25px;
+  }
+  .science-figure {
+    padding:14px;
+    border-radius:14px;
+  }
+  .research-stats {
+    gap:30px;
+    margin-top:22px;
+  }
+  .research-stats strong {
+    font-size:27px;
+  }
+  .asteroids {
+    padding-block:54px;
+  }
+  .asteroid-heading {
+    display:block;
+    margin-bottom:25px;
+  }
+  .orbit-visual {
+    width:210px;
+    margin:20px auto 0;
+    display:block;
+  }
+  .two-column-copy {
+    display:block;
+  }
+  .two-column-copy p:last-child {
+    margin-bottom:1.2em;
+  }
+  .research-note {
+    margin-top:28px;
+    font-size:14px;
+  }
+  .observing-grid {
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+  .observing-grid .section-title {
+    font-size:40px;
+    max-width:330px;
+    margin-bottom:8px;
+  }
+  .observing-title {
+    font-size:25px;
+  }
+  .status-label {
+    margin-bottom:20px;
+  }
+  .skills-heading .section-title {
+    font-size:38px;
+  }
+  .detail-row {
+    padding-block:20px;
+  }
+  .detail-row summary {
+    font-size:18px;
+  }
+  .collaboration-grid {
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+  .collaboration-grid .section-title {
+    font-size:38px;
+    margin-bottom:10px;
+  }
+  .section-header-row {
+    display:block;
+    margin-bottom:30px;
+  }
+  .section-header-row h2 {
+    font-size:38px;
+    margin-bottom:20px;
+  }
+  .selected-paper {
+    grid-template-columns:1fr 35px;
+    gap:14px;
+    padding-block:26px;
+  }
+  .selected-paper .paper-meta {
+    grid-column:1/-1;
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .selected-paper .paper-status {
+    margin:0;
+  }
+  .selected-paper time {
+    font-size:13px;
+  }
+  .selected-paper h3 {
+    font-size:22px;
+  }
+  .footer-heading {
+    align-items:start;
+    flex-direction:column;
+    gap:25px;
+    padding-bottom:32px;
+  }
+  .footer-heading h2 {
+    font-size:34px;
+  }
+  .site-footer {
+    padding-block:48px 24px;
+  }
+  .footer-columns {
+    grid-template-columns:1fr;
+    gap:28px;
+    padding-block:30px;
+  }
+  .footer-columns p,.footer-columns ul {
+    font-size:14px;
+  }
+  .footer-columns h3 {
+    margin-bottom:8px;
+  }
+  .footer-bottom {
+    font-size:11px;
+    flex-direction:column;
+    gap:10px;
+  }
+  .footer-bottom a {
+    margin:0 22px 0 0;
+  }
+  .document-shell {
+    padding-block:45px 60px;
+  }
+  .document-heading {
+    margin-bottom:30px;
+    padding-bottom:30px;
+  }
+  .document-heading h1 {
+    font-size:36px;
+  }
+  .document-intro {
+    font-size:18px;
+  }
+  .document-body h2 {
+    font-size:27px;
+    margin-top:36px;
+  }
+  .document-body h3,.publication-entry h3 {
+    font-size:22px;
+  }
+  .publication-entry {
+    padding-block:24px;
+  }
+  .document-heading .eyebrow {
+    font-size:10px;
+  }
+  .publication-nav {
+    gap:8px;
+  }
+  .publication-nav a {
+    font-size:12px;
+    padding-inline:13px;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior:auto;
+  }
+  *,*::before,*::after {
+    transition:none!important;
+    animation:none!important;
+  }
+}
+@media print {
+  .site-header,.menu-toggle,.button-row,.footer-heading,.footer-bottom,.skip-link {
+    display:none!important;
+  }
+  body {
+    font-size:11pt;
+  }
+  .shell {
+    width:100%;
+  }
+  .hero,.section,.asteroids,.astrometry,.document-shell {
+    padding-block:20px;
+  }
+  .research-feature,.observing-section {
+    background:#fff;
+    color:#000;
+    border:1px solid #ccc;
+  }
+  .research-feature p,.observing-section p {
+    color:#333;
+  }
+  .skills-heading {
+    position:static;
+  }
+  details>div {
+    display:block!important;
+  }
+  a {
+    color:inherit;
+  }
+  .page__footer {
+    background:none;
+  }
+}
