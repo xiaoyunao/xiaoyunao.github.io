@@ -2,6 +2,14 @@
 
 ## 2026-10-27
 
+### Compact the GIF gallery and double stream playback
+
+- Goal: four smaller GIFs on one row; double the current stream speed.
+- Recovery: clean main/origin at d3e0893; status/branch/fetch/history and WORKLOG/PLAN reviewed.
+- Files: home.css uses four equal columns, 16px desktop/8px mobile gaps; stream.js advances at 48 Myr/s (62.5 seconds for 3 Gyr); model docs and continuity instructions updated.
+- Validation: production-safe Jekyll build, JS syntax and git whitespace checks pass. Browser confirms all four GIFs loaded, share one row at 213px each on a 1280px viewport, with no horizontal overflow; timeline advances and browser error log is empty. Screenshot: .local/gif-single-row.png.
+- Next: publish and verify the live CSS and animation script.
+
 ### Polish the stream scene, simplify captions and embed four observation GIFs
 
 - Goal: implement the user's animation-focused revision: start at zero, faster playback, stronger galaxy art direction, remove defensive explanations/report-style captions, use Pal5 Figure 5 and the four Desktop GIFs.

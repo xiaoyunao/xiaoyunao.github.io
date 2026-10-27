@@ -59,7 +59,7 @@
 .method-grid h3 { font-size: 18px; margin-bottom: 12px; }
 .paper-figure-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start; margin-bottom: 36px; }
 .paper-figure-grid .research-figure > a { min-height: 285px; display: grid; align-items: center; }
-.asteroid-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 900px; margin: 0 auto; }
+.asteroid-gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; max-width: 900px; margin: 0 auto; }
 .asteroid-gallery figure { margin: 0; overflow: hidden; border-radius: 10px; background: #090c11; }
 .asteroid-gallery img { width: 100%; height: auto; display: block; }
 .research-section .gallery-caption { max-width: 900px; margin: 12px auto 38px; color: #7a818c; font-size: 12px; }
@@ -112,7 +112,7 @@
   .paper-figure-grid .research-figure > a { min-height: 0; }
   .research-figure > a { padding: 7px; }
   .research-figure figcaption { font-size: 10px; }
-  .asteroid-gallery { gap: 12px; }
+  .asteroid-gallery { gap: 8px; }
   .method-grid { margin-block: 25px 28px; gap: 10px; }
   .method-grid h3 { font-size: 18px; }
   .skill-list > div { grid-template-columns: 1fr; gap: 10px; padding-block: 21px; }

@@ -2,18 +2,18 @@
 
 ## Objective
 
-Polish the opening galaxy/stream animation and research media in the canonical homepage checkout, following the user's latest 2026-10-27 feedback. Use concise factual copy, a zero-time opening, stronger galaxy imagery, Palomar 5 Figure 5 and the four supplied Desktop GIFs.
+Apply the latest 2026-10-27 layout/playback adjustment: four smaller observation GIFs on one row and double the current stream speed to 48 Myr/s. Preserve the existing visual design and content.
 
 ## Milestones
 
 - [x] Recover synchronized repository context.
 - [x] Generate and integrate the new galaxy texture and simplified scene graphics/controls.
-- [x] Change playback to start at 0 Gyr and run at 24 Myr/s; update the static opening frame.
+- [x] Change playback to start at 0 Gyr and run at 48 Myr/s; update the static opening frame.
 - [x] Remove defensive explanations and manuscript/figure-number captions.
-- [x] Extract Palomar 5 Figure 5 and embed all four Desktop observation GIFs.
+- [x] Extract Palomar 5 Figure 5 and embed all four Desktop observation GIFs in a compact single row.
 - [x] Validate GIF frame identity/timing and continuous looping, plus zero-time/texture/browser checks.
 - [x] Complete final mobile/rendered-site checks.
-- [x] Commit/push and verify GitHub Pages deployment and live assets (a8764c5; versioned assets c38cb50).
+- [ ] Commit/push and verify the latest single-row/speed update on GitHub Pages.
 
 ## Outstanding issues
 
