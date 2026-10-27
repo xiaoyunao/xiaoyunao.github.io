@@ -10,7 +10,7 @@ Expand the homepage animation to six physical stellar streams: three globular-cl
 - [x] Generate six Gala streams with varied masses, sizes and orbital initial conditions.
 - [x] Extend the renderer to multiple progenitors with common tail colors and a clear composition.
 - [x] Validate numerical exports, browser controls, desktop/mobile visuals and static poster.
-- [ ] Publish and verify live HTML, data and renderer.
+- [x] Publish and verify live HTML, data and renderer (80f73a3).
 
 ## Outstanding issues
 

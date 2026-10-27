@@ -13,7 +13,8 @@
 - Validation: decoded final binary checked for indices/coverage, distinct masses/orbital poles, core/tail membership, release masks and sentinel consistency. Python/JS syntax, production-safe Jekyll build, whitespace and generated HTML/asset/version checks pass. Browser confirms six streams at 2.4 Gyr, 2999 Myr wraps to 13–20 Myr while playing, pause/view/reset work; 1280/390/320 layouts have no overflow and error log is empty.
 - Poster: captured the actual six-core canvas at exactly 0 Gyr via a temporary local capture page; final build removes the fixture. Screenshots: .local/six-streams-desktop.png and six-streams-mobile.png. Data and poster URLs versioned to avoid stale one-stream caches.
 - Files: generate_stream.py, stream.js, binary/JSON, poster, hero caption/ARIA, home.css, model/README/continuity docs.
-- Next: publish and verify live assets.
+- Deployment: content 80f73a3 pushed to main; GitHub Pages built the exact commit without errors at 2026-10-27T08:42:03Z (16:42:03 Asia/Shanghai). Live HTML confirms six-stream caption/schema; CSS, renderer, JSON, binary and zero-time poster all match source SHA-256.
+- Result: six different-mass/orbit streams with uniform tail colors are online.
 
 ### Restore four titled skill entries with substantive descriptions
 
