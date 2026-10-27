@@ -73,10 +73,10 @@ redirect_from:
 
 <section class="research-section shell" id="skills" aria-labelledby="skills-heading">
 <header class="research-section-heading"><span class="section-number">04</span><h2 id="skills-heading">Skills</h2></header>
-<dl class="skill-list">
-<div><dt>Scientific computing</dt><dd>Python for data analysis, visualization and pipeline development; Linux and NERSC for large survey datasets and computational work. I also use Java, HTML and LaTeX.</dd></div>
-<div><dt>Survey pipelines</dt><dd>Image calibration, astrometry, photometry, source and catalog matching, moving-object processing, and reproducible quality checks.</dd></div>
-<div><dt>AI-assisted development</dt><dd>AI coding tools and agents for planning, development, debugging, documentation and repetitive processing, with generated code and numerical results checked against scientific expectations.</dd></div>
-<div><dt>Instrumentation</dt><dd>Undergraduate experience in imaging-detector development and testing for the Cherenkov telescopes of <a href="http://english.ihep.cas.cn/lhaaso/">LHAASO</a>.</dd></div>
-</dl>
+<div class="research-copy skills-copy">
+<p>I use Python for scientific data analysis, visualization and pipeline development. I work with Linux and NERSC to process large survey datasets and run computational analyses, and I also use Java, HTML and LaTeX.</p>
+<p>I build survey pipelines for image calibration, astrometry, photometry, source and catalog matching, and moving-object analysis. I develop reproducible workflows to assess data quality and measurement performance.</p>
+<p>I use AI coding tools and agents to support planning, software development, debugging, documentation and repetitive processing.</p>
+<p>I gained experience in imaging-detector development and testing for the Cherenkov telescopes of <a href="http://english.ihep.cas.cn/lhaaso/">LHAASO</a> during my undergraduate studies.</p>
+</div>
 </section>

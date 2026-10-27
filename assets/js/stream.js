@@ -131,9 +131,11 @@
     if (!visible || document.hidden) { lastTime = null; return; }
     const elapsed = lastTime === null ? 0 : Math.min(100, time - lastTime);
     lastTime = time;
-    if (playing) age = Math.min(model.durationMyr, age + elapsed * .048);
+    if (playing) {
+      age += elapsed * .048;
+      if (age >= model.durationMyr) age = 0;
+    }
     if (time - lastPaint >= 32 || !playing) { render(); lastPaint = time; }
-    if (age >= model.durationMyr) { playing = false; setPlayLabel(); }
     if (playing) requestFrame();
   }
   try {

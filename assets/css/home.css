@@ -65,12 +65,7 @@
 .research-section .gallery-caption { max-width: 900px; margin: 12px auto 38px; color: #7a818c; font-size: 12px; }
 .research-text-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
 .research-text-columns p:last-child { margin-bottom: 0; }
-.skill-list { margin: 0; }
-.skill-list > div { display: grid; grid-template-columns: 240px 1fr; gap: 35px; border-bottom: 1px solid #e1e4e9; padding-block: 24px; }
-.skill-list > div:first-child { padding-top: 0; }
-.skill-list > div:last-child { border-bottom: 0; padding-bottom: 0; }
-.skill-list dt { font-size: 17px; font-weight: 500; }
-.skill-list dd { margin: 0; color: #555b64; font-size: 16px; line-height: 1.8; max-width: 720px; }
+.skills-copy { max-width: 900px; }
 @media (max-width: 899px) {
   .stream-hero { height: calc(100svh - 63px); min-height: 650px; }
   .hero-profile { top: 30px; gap: 17px; }
@@ -85,7 +80,6 @@
   .research-section-heading h2 { font-size: 32px; }
   .method-grid,.research-text-columns { gap: 25px 35px; }
   .paper-figure-grid .research-figure > a { min-height: 190px; }
-  .skill-list > div { grid-template-columns: 190px 1fr; gap: 22px; }
 }
 @media (max-width: 600px) {
   .stream-hero { min-height: 720px; }
@@ -115,8 +109,6 @@
   .asteroid-gallery { gap: 8px; }
   .method-grid { margin-block: 25px 28px; gap: 10px; }
   .method-grid h3 { font-size: 18px; }
-  .skill-list > div { grid-template-columns: 1fr; gap: 10px; padding-block: 21px; }
-  .skill-list dd { font-size: 15px; }
 }
 @media print {
   .stream-hero { height: 250px; min-height: 0; color: #000; background: #fff; }

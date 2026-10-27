@@ -2,6 +2,14 @@
 
 ## 2026-10-27
 
+### Loop the stellar-stream animation and write Skills as first-person prose
+
+- Goal: automatically restart playback at zero after the final frame; replace Skills fragments with normal I-based sentences.
+- Recovery: main synchronized with origin at 719b1a0 after status/branch/fetch/history and WORKLOG/PLAN reads.
+- Files: stream.js restarts at zero while remaining in playback; about.md now has four first-person paragraphs, with simple skills-copy styling replacing the definition list; README/model docs/instructions updated.
+- Validation: production-safe Jekyll build and JS syntax pass. Browser set the timeline to 2999 Myr and resumed: it automatically wrapped to 10–16 Myr with the Pause button still active. Pausing holds at 164 Myr; Skills renders four first-person paragraphs, no definition list or horizontal overflow; browser error log empty. Screenshot: .local/skills-first-person.png.
+- Next: publish and verify live content, stylesheet and animation script.
+
 ### Compact the GIF gallery and double stream playback
 
 - Goal: four smaller GIFs on one row; double the current stream speed.
