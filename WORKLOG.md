@@ -13,7 +13,9 @@
 - Frontend: Canvas 3D projection uses the physical snapshots, preserves spatial scale, supports rotation/view presets, pause/replay and time scrubbing; pauses offscreen/hidden and respects reduced motion. Static poster uses the same browser renderer. Data transfer ~2.37 MB; no live-site scientific runtime/dependency.
 - Files: about.md; new home.css/stream.js/data/figure assets/generator docs; head/scripts includes; punctuation in masthead; removed slogan intros from academic subpages; scripts excluded from publication. Footer source/design retained unchanged.
 - Validation so far: Python syntax and actual scientific run passed; production-safe Jekyll build passed; browser 1440/390 checks show no horizontal overflow, 78/54px avatars, exactly four research headings, working time endpoints (0/3000 Myr), view changes and loaded figures. Mobile QA found and fixed scale-bar/caption overlap. Final internal link/asset/anchor checks, all four headings, rejected-copy absence, metadata/contact, 11 publications, 30 unique sitemap URLs, JS/Python syntax and git whitespace checks pass. Browser error log empty; 320/390/1440px layouts have no horizontal overflow. View reset and manuscript image loading also verified.
-- Next: commit the validated refinement and verify its GitHub Pages deployment.
+- Deployment: content commit `4519743` pushed to main; authenticated Pages API confirms exact commit built with no error at 2026-10-27T07:47:27Z (15:47:27 Asia/Shanghai).
+- Live checks: correct four-section homepage and removed copy confirmed; remote model JSON/binary, renderer, manuscript figures and static poster match local SHA-256 values. Native live browser navigation timed out; interactive/browser QA was completed on the identical local production output, while online content/assets were verified via HTTPS.
+- Result: all requested content/layout changes and the physical stream prototype implemented and deployed. Remaining scientific limitations are documented, not unresolved implementation work. Next: continue any user-directed visual adjustments from this checkout.
 
 ### Redesign the academic homepage and update observing/contact/search details
 

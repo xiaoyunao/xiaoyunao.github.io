@@ -14,7 +14,7 @@ Refine the existing homepage in `/Users/island/Desktop/personal_page` according 
 - [x] Generate physical 3D stream snapshots with Gala and validate numerical/export invariants.
 - [x] Integrate interactive playback, camera controls, physical scale, reduced-motion/offscreen behavior and static fallback.
 - [x] Finish responsive/browser and complete rendered-site validation.
-- [ ] Commit/push the refined design and verify its GitHub Pages deployment.
+- [x] Commit/push the refined design and verify exact GitHub Pages deployment (`4519743`, built 2026-10-27) and live asset hashes.
 
 ## Outstanding issues
 
@@ -33,5 +33,4 @@ Refine the existing homepage in `/Users/island/Desktop/personal_page` according 
 
 ## Next recommended steps
 
-1. Finish QA and deploy this corrected iteration to the established GitHub Pages URL.
-2. Continue visual refinements from the user's feedback in this checkout; preserve factual tone and the four-part structure.
+1. Continue visual refinements from the user's feedback in this checkout; preserve factual tone and the four-part structure.
