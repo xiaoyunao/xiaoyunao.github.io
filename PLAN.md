@@ -10,7 +10,7 @@ Emphasize Skills keywords in bold, link named projects/facilities and fade the s
 - [x] Add semantic emphasis and links while preserving all four Skills entries and their prose.
 - [x] Limit desktop core labels to the first 100 Myr, fading between 40 and 100 Myr.
 - [x] Validate build, markup and opening/later label states in the browser.
-- [ ] Publish and verify live HTML and renderer.
+- [x] Publish and verify live HTML and renderer (8ce9e5c).
 
 ## Outstanding issues
 

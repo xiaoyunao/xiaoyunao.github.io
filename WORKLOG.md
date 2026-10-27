@@ -9,7 +9,8 @@
 - Links: reused established institutional links; verified CSST data-system page and Yunnan University Mephisto article, plus public SHARP and gotta-asteroid-known repositories. NERSC, Xinglong, Hale, Blanco/DECam and LHAASO also linked in Skills.
 - Files: about.md markup only; stream.js fades desktop labels from 40 to 100 Myr and omits them afterward; model/instructions/plan updated. Six-stream data, speed, colors and detailed prose retained.
 - Validation: production-safe Jekyll build, JS syntax and whitespace checks pass. Text extraction confirms prose unchanged, with four items, 22 strong terms and nine links. Browser confirms all emphasis at weight 600, no overflow/errors, six labels at 0 Myr and none at 100 or 2400 Myr. Model data/footer unchanged. Screenshots: .local/skills-emphasis-links.png and six-streams-unlabeled.png.
-- Next: publish and verify live HTML and renderer.
+- Deployment: 8ce9e5c pushed to main; exact Pages commit built without errors at 2026-10-27T08:50:11Z (16:50:11 Asia/Shanghai). Live HTML confirms four items, 22 emphasized terms and nine links; live versioned renderer SHA-256 matches source.
+- Result: linked/emphasized Skills and opening-only type/mass labels are online.
 
 ### Add a six-stream population of globular clusters and dwarf galaxies
 
