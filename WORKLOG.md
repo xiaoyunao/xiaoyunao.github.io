@@ -2,6 +2,15 @@
 
 ## 2026-10-27
 
+### Emphasize Skills keywords, link project names and briefly show core labels
+
+- Goal: bold important Skills terms and link named projects/facilities; remove moving core labels after the opening frames.
+- Recovery: main/origin synchronized at a14fe81 after status/branch/fetch/history and WORKLOG/PLAN reads; existing .DS_Store untouched.
+- Links: reused established institutional links; verified CSST data-system page and Yunnan University Mephisto article, plus public SHARP and gotta-asteroid-known repositories. NERSC, Xinglong, Hale, Blanco/DECam and LHAASO also linked in Skills.
+- Files: about.md markup only; stream.js fades desktop labels from 40 to 100 Myr and omits them afterward; model/instructions/plan updated. Six-stream data, speed, colors and detailed prose retained.
+- Validation: production-safe Jekyll build, JS syntax and whitespace checks pass. Text extraction confirms prose unchanged, with four items, 22 strong terms and nine links. Browser confirms all emphasis at weight 600, no overflow/errors, six labels at 0 Myr and none at 100 or 2400 Myr. Model data/footer unchanged. Screenshots: .local/skills-emphasis-links.png and six-streams-unlabeled.png.
+- Next: publish and verify live HTML and renderer.
+
 ### Add a six-stream population of globular clusters and dwarf galaxies
 
 - Goal: three different-mass globular clusters plus three different-mass dwarf galaxies on varied orbits, with common leading/trailing colors.

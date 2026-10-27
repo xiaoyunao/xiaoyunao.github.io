@@ -42,7 +42,7 @@ Each stream is integrated separately in the common Milky Way potential with its 
 - Integrate forward from 0 to 3000 Myr with 1 Myr steps, DOPRI853 tolerances 1e-10 and snapshots every 10 Myr.
 - Release particles every 12 Myr: one per tail for each cluster, two per tail for each dwarf galaxy. Final population: 4,518 tail tracers and six cores, 301 frames.
 - All leading tails use `#add2ff`; all trailing tails use `#f1cf9a`. The renderer uses tail membership directly, independent of the progenitor.
-- Core stellar markers sample each progenitor's Plummer scale, with a small screen-space center marker and glow. Stream widths come from particle positions. Desktop labels show type and mass; mobile preserves the common tail legend and omits the small individual labels.
+- Core stellar markers sample each progenitor's Plummer scale, with a small screen-space center marker and glow. Stream widths come from particle positions. Desktop type/mass labels appear only during the first 100 Myr (about 2.1 seconds), fading from 40 to 100 Myr on each loop. Mobile preserves the common tail legend and omits the small individual labels.
 - Playback starts at 0 Gyr and advances at 48 Myr per wall-clock second. The full interval takes 62.5 seconds and automatically loops back to zero.
 - The same view transform projects particles and the generated galaxy texture `images/milky-way-disk.png`. Texture source and prompt: [GALAXY_ASSET.md](GALAXY_ASSET.md).
 - Offscreen/hidden tabs pause scheduling; reduced-motion preferences, manual pause, time scrubbing, view presets and pointer rotation remain supported.

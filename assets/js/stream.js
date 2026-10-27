@@ -105,6 +105,7 @@
     const cores = progenitors.map(stream => ({...stream, position: sample(stream.coreIndex)}));
     cores.sort((a, b) => projection(...a.position)[2] - projection(...b.position)[2]);
     const labels = [];
+    const labelAlpha = Math.max(0, Math.min(1, (100 - age) / 60));
     context.font = '10px -apple-system, BlinkMacSystemFont, sans-serif';
     for (const stream of cores) {
       const core = stream.position;
@@ -119,18 +120,19 @@
       glow(context, px, py, glowRadius, '255,237,199', stream.kind === 'dwarf' ? .2 : .3);
       context.fillStyle = '#fff3dc';
       context.beginPath(); context.arc(px, py, stream.kind === 'dwarf' ? 1.3 : 1.15, 0, Math.PI * 2); context.fill();
-      if (width < 720) continue;
+      if (width < 720 || labelAlpha === 0) continue;
       const textWidth = context.measureText(stream.caption).width;
       for (const [dx, dy] of [[13, -11], [13, 19], [-textWidth - 13, -11], [-textWidth - 13, 19]]) {
         const box = {x: px + dx, y: py + dy - 10, w: textWidth, h: 14};
         if (box.x < 12 || box.x + box.w > width - 12 || box.y < 165 || box.y + box.h > height - 130) continue;
         if (labels.some(other => box.x < other.x + other.w + 8 && box.x + box.w + 8 > other.x && box.y < other.y + other.h + 6 && box.y + box.h + 6 > other.y)) continue;
-        context.fillStyle = 'rgba(218,227,240,.7)';
+        context.fillStyle = `rgba(218,227,240,${.7 * labelAlpha})`;
         context.fillText(stream.caption, box.x, box.y + 10);
         labels.push(box);
         break;
       }
     }
+    canvas.dataset.visibleLabelCount = String(labels.length);
     canvas.dataset.streamCount = String(model.streams.length);
     canvas.dataset.visibleStreamParticles = String(streamPoints.length);
     slider.value = String(Math.round(age)); output.textContent = `${(age / 1000).toFixed(2)} Gyr`;
