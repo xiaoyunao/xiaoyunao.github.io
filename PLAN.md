@@ -2,7 +2,7 @@
 
 ## Objective
 
-Maintain https://xiaoyunao.github.io exclusively from `/Users/island/Desktop/personal_page`. Current milestone: deploy the Apple-inspired UI refresh requested on 2026-10-27, with completed Chile/Blanco/IBIS observing, updated phone, and clearer name-variant metadata.
+Maintain https://xiaoyunao.github.io exclusively from `/Users/island/Desktop/personal_page`. Current milestone completed: deployed the Apple-inspired UI refresh requested on 2026-10-27, with completed Chile/Blanco/IBIS observing, updated phone, and clearer name-variant metadata.
 
 ## Milestones
 
@@ -13,7 +13,7 @@ Maintain https://xiaoyunao.github.io exclusively from `/Users/island/Desktop/per
 - [x] Add yunaoxiao identity alias and Yunao Xiao search title; preserve canonical URLs, verification, ORCID/GitHub and social-profile scope.
 - [x] Build safely and inspect desktop/tablet/phone layouts, mobile navigation and native disclosures.
 - [x] Finish site-wide link/asset checks, JS syntax and final whitespace review.
-- [ ] Commit/push the refresh and verify the exact GitHub Pages deployment and live content.
+- [x] Commit/push the refresh and verify the exact GitHub Pages deployment (`aa61526`, built 2026-10-27) and live content.
 
 ## Preserved completed work
 
@@ -40,6 +40,5 @@ Maintain https://xiaoyunao.github.io exclusively from `/Users/island/Desktop/per
 
 ## Next recommended steps
 
-1. Finish validation and publish this refresh to the existing GitHub Pages address.
-2. After recrawling, compare the four name spellings in Search Console's query report; separately recheck the sitemap processing report when account access is available.
-3. Continue content maintenance only from this checkout.
+1. After recrawling, compare the four name spellings in Search Console's query report; separately recheck the sitemap processing report when account access is available.
+2. Continue content maintenance only from this checkout.

@@ -12,7 +12,10 @@
 - Search finding: supplied Google email reports first impressions on Oct 6. Added yunaoxiao to existing Person aliases, Yunao Xiao to the search title, stable identity id/portrait/affiliation. Retained canonical URLs, verification, ORCID/GitHub and no social-profile additions. No ranking guarantee or new Search Console submission claimed; sitemap account report not rechecked.
 - Commands: production-safe Jekyll build; Python rendered HTML/JSON-LD/link/sitemap checks; browser desktop/tablet/phone review; git diff checks. Initial visual QA caught nested Markdown rendering as literal tags; converted text blocks to semantic HTML and rebuilt. Link checker initially misclassified a protocol-relative external URL; corrected checker. System node absent; use the bundled runtime for JS syntax check.
 - Validation so far: homepage content/metadata assertions pass; 30 unique sitemap URLs; responsive widths 1440/721/390/320 have no homepage overflow; mobile menu and native disclosures reviewed. Final internal link/asset/anchor, JSON-LD, five primary headings, all 11 publication URLs, JS syntax and git whitespace checks passed.
-- Next: commit/push the validated refresh and verify GitHub Pages serves it.
+- Deployment: content commit `aa61526` pushed to main. Authenticated GitHub Pages API reports exact commit built, no error, 2026-10-27T07:03:32Z (15:03:32 Asia/Shanghai).
+- Live validation: HTTPS homepage and stylesheet serve the new UI; completed observing, new clickable phone, Yunao Xiao title/yunaoxiao alias and Google verification confirmed. Publications retains 11 entries; teaching title/link correction is online. Empty analytics configuration no longer loads an unused tracker. Existing Twitter/X link is retained in the contact area.
+- Result: requested refresh completed and deployed. Google ranking and the separate signed-in sitemap processing report remain external follow-ups. No additional indexing request or recurring automation created.
+- Next: assess name-variant query impressions after Google recrawls, and maintain future content from this checkout.
 
 ## 2026-10-05
 
