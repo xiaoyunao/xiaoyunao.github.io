@@ -6,7 +6,7 @@
   min-height: 680px;
   max-height: 1100px;
   overflow: hidden;
-  background: #070b12 url('../../images/stream-poster.jpg') center / cover no-repeat;
+  background: #070b12 url('../../images/stream-poster.jpg?v=zero-20261027') center / cover no-repeat;
   color: #edf1f8;
 }
 #stream-canvas { display: block; width: 100%; height: 100%; touch-action: pan-y; }
