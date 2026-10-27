@@ -13,7 +13,7 @@ Polish the opening galaxy/stream animation and research media in the canonical h
 - [x] Extract Palomar 5 Figure 5 and embed all four Desktop observation GIFs.
 - [x] Validate GIF frame identity/timing and continuous looping, plus zero-time/texture/browser checks.
 - [x] Complete final mobile/rendered-site checks.
-- [ ] Commit/push and verify GitHub Pages deployment and live assets.
+- [x] Commit/push and verify GitHub Pages deployment and live assets (a8764c5; versioned assets c38cb50).
 
 ## Outstanding issues
 
@@ -31,5 +31,4 @@ Polish the opening galaxy/stream animation and research media in the canonical h
 
 ## Next recommended steps
 
-1. Finish QA and publish this refinement to the existing GitHub Pages URL.
-2. Continue user-directed visual edits from this checkout with concise academic copy and direct image captions.
+1. Continue user-directed visual edits from this checkout with concise academic copy and direct image captions.
