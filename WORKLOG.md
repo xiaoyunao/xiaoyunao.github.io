@@ -8,7 +8,8 @@
 - Recovery: main synchronized with origin at 719b1a0 after status/branch/fetch/history and WORKLOG/PLAN reads.
 - Files: stream.js restarts at zero while remaining in playback; about.md now has four first-person paragraphs, with simple skills-copy styling replacing the definition list; README/model docs/instructions updated.
 - Validation: production-safe Jekyll build and JS syntax pass. Browser set the timeline to 2999 Myr and resumed: it automatically wrapped to 10–16 Myr with the Pause button still active. Pausing holds at 164 Myr; Skills renders four first-person paragraphs, no definition list or horizontal overflow; browser error log empty. Screenshot: .local/skills-first-person.png.
-- Next: publish and verify live content, stylesheet and animation script.
+- Deployment: 1d4c307 pushed to main; exact GitHub Pages build completed at 2026-10-27T08:27:21Z (16:27:21 Asia/Shanghai), without errors. Live Skills paragraphs verified; versioned CSS and animation-script SHA-256 values match source.
+- Result: automatic looping and first-person Skills are online; no outstanding issue.
 
 ### Compact the GIF gallery and double stream playback
 

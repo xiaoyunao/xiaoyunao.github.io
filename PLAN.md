@@ -10,7 +10,7 @@ Automatically loop the opening stellar-stream animation from the end back to 0 G
 - [x] Restart active playback at zero while preserving 48 Myr/s speed, pause and time controls.
 - [x] Replace Skills fragments with first-person prose and simplify its layout.
 - [x] Validate production output and browser endpoint/pause behavior.
-- [ ] Publish and verify the live update.
+- [x] Publish and verify the live update (1d4c307).
 
 ## Outstanding issues
 
